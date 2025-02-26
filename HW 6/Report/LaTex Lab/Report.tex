@@ -1,0 +1,124 @@
+\documentclass[12pt]{article}
+
+% Packages for formatting
+\usepackage{amsmath, amssymb, amsthm} % Math symbols & environments
+\usepackage{geometry} % Page layout
+\usepackage{graphicx} % Images (if needed)
+\usepackage{enumitem} % Custom numbering
+\usepackage{hyperref} % Hyperlinks
+\usepackage{fancyhdr} % Header/Footer formatting
+
+% Page Formatting
+\geometry{margin=1in} % 1-inch margins
+\setlength{\parindent}{0pt} % No paragraph indent
+\setlength{\parskip}{8pt} % Spacing between paragraphs
+
+% Custom Header/Footer
+\pagestyle{fancy}
+\fancyhead[L]{PHYSICS 373 - Problem Set 6}
+\fancyhead[R]{Enrique Rivera Jr}
+\fancyfoot[C]{\thepage}
+
+% Theorem Styles
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+% Custom Commands for Inner Products
+\newcommand{\braket}[2]{\langle #1 | #2 \rangle}
+\newcommand{\norm}[1]{\lVert #1 \rVert}
+
+\begin{document}
+
+\title{Problem Set 6 Solutions}
+\author{Enrique Rivera Jr}
+\date{\today}
+
+\maketitle
+
+\section*{Problem 1: Schwarz Inequality Proof}
+
+\begin{theorem}[Schwarz Inequality]
+For any two vectors \( |v\rangle \) and \( |w\rangle \) in an inner product space, the following holds:
+\[
+\braket{v}{v} \braket{w}{w} \geq |\braket{v}{w}|^2.
+\]
+\end{theorem}
+
+\begin{proof}
+Consider the vector:
+\[
+|u\rangle = |v\rangle + \alpha |w\rangle
+\]
+for some scalar \( \alpha \). Since the inner product satisfies positivity, we have:
+\[
+\braket{u}{u} = \braket{v}{v} + \alpha^* \braket{w}{v} + \alpha \braket{v}{w} + |\alpha|^2 \braket{w}{w} \geq 0.
+\]
+
+Choosing \( \alpha = -\frac{\braket{v}{w}}{\braket{w}{w}} \) (assuming \( \braket{w}{w} \neq 0 \)), we get:
+\[
+\braket{v}{v} - \frac{|\braket{v}{w}|^2}{\braket{w}{w}} \geq 0.
+\]
+
+Rearranging,
+\[
+\braket{v}{v} \braket{w}{w} \geq |\braket{v}{w}|^2.
+\]
+
+Thus, the inequality is proven.
+\end{proof}
+
+
+
+
+
+\section*{Problem 2: Triangle Inequality Proof}
+
+\begin{theorem}[Triangle Inequality]
+For any two vectors \( |v\rangle \) and \( |w\rangle \) in an inner product space, we have:
+\[
+\norm{|v\rangle + |w\rangle} \leq \norm{|v\rangle} + \norm{|w\rangle}.
+\]
+\end{theorem}
+
+\begin{proof}
+Starting with the squared norm of the sum:
+\[
+\norm{|v\rangle + |w\rangle}^2 = \braket{v + w}{v + w}.
+\]
+Expanding the inner product using linearity:
+\[
+\norm{|v\rangle + |w\rangle}^2 = \braket{v}{v} + \braket{w}{w} + 2\text{Re}(\braket{v}{w}).
+\]
+Applying the **Schwarz Inequality**:
+\[
+|\braket{v}{w}|^2 \leq \braket{v}{v} \braket{w}{w}.
+\]
+Taking the square root:
+\[
+|\braket{v}{w}| \leq \norm{|v\rangle} \norm{|w\rangle}.
+\]
+Using this in our inequality:
+\[
+\norm{|v\rangle + |w\rangle}^2 \leq \norm{|v\rangle}^2 + \norm{|w\rangle}^2 + 2\norm{|v\rangle} \norm{|w\rangle}.
+\]
+Factoring:
+\[
+\norm{|v\rangle + |w\rangle}^2 \leq (\norm{|v\rangle} + \norm{|w\rangle})^2.
+\]
+Taking the square root on both sides:
+\[
+\norm{|v\rangle + |w\rangle} \leq \norm{|v\rangle} + \norm{|w\rangle}.
+\]
+
+Thus, the **Triangle Inequality** is proven.
+\end{proof}
+
+
+
+
+
+
+
+\end{document}
