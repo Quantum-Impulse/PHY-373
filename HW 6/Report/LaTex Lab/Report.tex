@@ -368,7 +368,130 @@ M^{-1} =
 \end{pmatrix}.
 \]
 
-\end{document}
+
+
+
+
+
+
+
+\section*{Problem 4: Computing \( e^{\alpha M} \)}
+
+\subsection*{Step 1: Eigenvalue Decomposition of \( M \)}
+
+To compute the matrix exponential \( e^{\alpha M} \), we use the **eigenvalue decomposition**:
+
+\[
+M = B \Lambda B^{-1}
+\]
+
+where:
+- \( B \) is the matrix of eigenvectors,
+- \( \Lambda \) is the diagonal matrix of eigenvalues,
+- \( B^{-1} \) is the inverse of \( B \).
+
+From **Problem 3**, we already found:
+\[
+\Lambda =
+\begin{pmatrix}
+1 & 0 & 0 \\
+0 & 2 & 0 \\
+0 & 0 & 3
+\end{pmatrix}, \quad
+B =
+\begin{pmatrix}
+1 & 1 & 0 \\
+0 & 1 & 1 \\
+-1 & 0 & 1
+\end{pmatrix}.
+\]
+
+Since \( M \) is diagonalizable, we compute:
+
+\[
+e^{\alpha M} = B e^{\alpha \Lambda} B^{-1}.
+\]
+
+\subsection*{Step 2: Compute \( e^{\alpha \Lambda} \)}
+
+Since \( \Lambda \) is diagonal, its matrix exponential is computed element-wise:
+
+\[
+e^{\alpha \Lambda} =
+\begin{pmatrix}
+e^{\alpha \lambda_1} & 0 & 0 \\
+0 & e^{\alpha \lambda_2} & 0 \\
+0 & 0 & e^{\alpha \lambda_3}
+\end{pmatrix}.
+\]
+
+Substituting \( \lambda_1 = 1, \lambda_2 = 2, \lambda_3 = 3 \), we get:
+
+\[
+e^{\alpha \Lambda} =
+\begin{pmatrix}
+e^{\alpha} & 0 & 0 \\
+0 & e^{2\alpha} & 0 \\
+0 & 0 & e^{3\alpha}
+\end{pmatrix}.
+\]
+
+\subsection*{Step 3: Compute \( e^{\alpha M} = B e^{\alpha \Lambda} B^{-1} \)}
+
+Now, multiplying:
+
+\[
+B e^{\alpha \Lambda} =
+\begin{pmatrix}
+1 & 1 & 0 \\
+0 & 1 & 1 \\
+-1 & 0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+e^{\alpha} & 0 & 0 \\
+0 & e^{2\alpha} & 0 \\
+0 & 0 & e^{3\alpha}
+\end{pmatrix}.
+\]
+
+Performing the matrix multiplication:
+
+\[
+B e^{\alpha \Lambda} =
+\begin{pmatrix}
+e^{\alpha} & e^{2\alpha} & 0 \\
+0 & e^{2\alpha} & e^{3\alpha} \\
+- e^{\alpha} & 0 & e^{3\alpha}
+\end{pmatrix}.
+\]
+
+Now multiply by \( B^{-1} \), which we computed in **Problem 3**:
+
+\[
+B^{-1} =
+\begin{pmatrix}
+1 & -1 & 1 \\
+0 & 1 & -1 \\
+1 & 0 & 1
+\end{pmatrix}.
+\]
+
+Thus, computing:
+
+\[
+e^{\alpha M} = B e^{\alpha \Lambda} B^{-1}.
+\]
+
+Final matrix multiplication yields:
+
+\[
+e^{\alpha M} =
+\begin{pmatrix}
+\frac{e^{\alpha} + e^{2\alpha}}{2} & \frac{e^{2\alpha} - e^{\alpha}}{2} & 0 \\
+0 & \frac{e^{2\alpha} + e^{3\alpha}}{2} & \frac{e^{3\alpha} - e^{2\alpha}}{2} \\
+\frac{e^{3\alpha} - e^{\alpha}}{2} & 0 & \frac{e^{3\alpha} + e^{\alpha}}{2}
+\end{pmatrix}.
+\]
 
 
 
