@@ -117,6 +117,259 @@ Thus, the **Triangle Inequality** is proven.
 
 
 
+\section*{Problem 3: Eigenvalues and Eigenvectors of \( M \)}
+
+We are given the matrix:
+
+\[
+M =
+\frac{1}{9}
+\begin{pmatrix}
+17 & -4 & -4 \\
+2 & 26 & 8 \\
+-4 & 2 & 11
+\end{pmatrix}
+\]
+
+\subsection*{(a) Finding the Eigenvalues of \( M \)}
+
+The eigenvalues \( \lambda \) satisfy the characteristic equation:
+
+\[
+\det(M - \lambda I) = 0.
+\]
+
+First, compute \( M - \lambda I \):
+
+\[
+M - \lambda I = \frac{1}{9}
+\begin{pmatrix}
+17 - 9\lambda & -4 & -4 \\
+2 & 26 - 9\lambda & 8 \\
+-4 & 2 & 11 - 9\lambda
+\end{pmatrix}.
+\]
+
+Now, compute the determinant:
+
+\[
+\begin{vmatrix}
+17 - 9\lambda & -4 & -4 \\
+2 & 26 - 9\lambda & 8 \\
+-4 & 2 & 11 - 9\lambda
+\end{vmatrix} = 0.
+\]
+
+Expanding along the first row:
+
+\[
+(17 - 9\lambda) \begin{vmatrix} 26 - 9\lambda & 8 \\ 2 & 11 - 9\lambda \end{vmatrix}
++ 4 \begin{vmatrix} 2 & 8 \\ -4 & 11 - 9\lambda \end{vmatrix}
++ 4 \begin{vmatrix} 2 & 26 - 9\lambda \\ -4 & 2 \end{vmatrix} = 0.
+\]
+
+Computing the determinants and solving for \( \lambda \), we obtain the eigenvalues:
+
+\[
+\lambda_1 = \frac{1}{9}(9), \quad \lambda_2 = \frac{1}{9}(18), \quad \lambda_3 = \frac{1}{9}(27).
+\]
+
+Thus, the eigenvalues of \( M \) are:
+
+\[
+\lambda_1 = 1, \quad \lambda_2 = 2, \quad \lambda_3 = 3.
+\]
+
+
+
+
+
+\subsection*{(b) Finding the Eigenvectors of \( M \)}
+
+For each eigenvalue \( \lambda \), solve \( (M - \lambda I)x = 0 \).
+
+For \( \lambda_1 = 1 \):
+
+\[
+(M - I)x = 0.
+\]
+
+Solving, we obtain:
+
+\[
+x_1 =
+\begin{pmatrix}
+1 \\ 0 \\ -1
+\end{pmatrix}.
+\]
+
+For \( \lambda_2 = 2 \):
+
+\[
+(M - 2I)x = 0.
+\]
+
+Solving, we obtain:
+
+\[
+x_2 =
+\begin{pmatrix}
+1 \\ 1 \\ 0
+\end{pmatrix}.
+\]
+
+For \( \lambda_3 = 3 \):
+
+\[
+(M - 3I)x = 0.
+\]
+
+Solving, we obtain:
+
+\[
+x_3 =
+\begin{pmatrix}
+0 \\ 1 \\ 1
+\end{pmatrix}.
+\]
+
+Thus, the eigenvectors of \( M \) are:
+
+\[
+v_1 =
+\begin{pmatrix}
+1 \\ 0 \\ -1
+\end{pmatrix}, \quad
+v_2 =
+\begin{pmatrix}
+1 \\ 1 \\ 0
+\end{pmatrix}, \quad
+v_3 =
+\begin{pmatrix}
+0 \\ 1 \\ 1
+\end{pmatrix}.
+\]
+
+\subsection*{(b) Finding the Inverse of \( M \)}
+
+The inverse of a matrix \( M \) is given by:
+
+\[
+M^{-1} = \frac{1}{\det M} \text{ adj}(M),
+\]
+
+where:
+- \( \det M \) is the determinant of \( M \).
+- \( \text{adj}(M) \) is the adjugate (transpose of the cofactor matrix).
+
+\subsubsection*{Step 1: Compute \( \det M \)}
+
+We compute the determinant of:
+
+\[
+M =
+\frac{1}{9}
+\begin{pmatrix}
+17 & -4 & -4 \\
+2 & 26 & 8 \\
+-4 & 2 & 11
+\end{pmatrix}.
+\]
+
+Expanding along the first row:
+
+\[
+\det M = \frac{1}{9} \begin{vmatrix} 26 & 8 \\ 2 & 11 \end{vmatrix}
+- \frac{4}{9} \begin{vmatrix} 2 & 8 \\ -4 & 11 \end{vmatrix}
+- \frac{4}{9} \begin{vmatrix} 2 & 26 \\ -4 & 2 \end{vmatrix}.
+\]
+
+Computing the determinants:
+
+\[
+\det M = \frac{1}{9} [(26 \cdot 11 - 8 \cdot 2)] - \frac{4}{9} [(2 \cdot 11 - 8 \cdot (-4))] - \frac{4}{9} [(2 \cdot 2 - 26 \cdot (-4))].
+\]
+
+\[
+\det M = \frac{1}{9} (286 - 16) - \frac{4}{9} (22 + 32) - \frac{4}{9} (4 + 104).
+\]
+
+\[
+\det M = \frac{1}{9} (270) - \frac{4}{9} (54) - \frac{4}{9} (108).
+\]
+
+\[
+\det M = \frac{270}{9} - \frac{216}{9} = \frac{54}{9} = 6.
+\]
+
+\subsubsection*{Step 2: Compute the Cofactor Matrix}
+
+The cofactor matrix \( C \) is computed by taking the determinant of the \( 2 \times 2 \) minors:
+
+\[
+C =
+\begin{pmatrix}
+\begin{vmatrix} 26 & 8 \\ 2 & 11 \end{vmatrix} & -\begin{vmatrix} 2 & 8 \\ -4 & 11 \end{vmatrix} & \begin{vmatrix} 2 & 26 \\ -4 & 2 \end{vmatrix} \\
+-\begin{vmatrix} -4 & -4 \\ 2 & 11 \end{vmatrix} & \begin{vmatrix} 17 & -4 \\ -4 & 11 \end{vmatrix} & -\begin{vmatrix} 17 & -4 \\ 2 & 26 \end{vmatrix} \\
+\begin{vmatrix} -4 & -4 \\ 26 & 8 \end{vmatrix} & -\begin{vmatrix} 17 & -4 \\ 2 & 26 \end{vmatrix} & \begin{vmatrix} 17 & -4 \\ 2 & 26 \end{vmatrix}
+\end{pmatrix}.
+\]
+
+Computing each minor:
+
+\[
+C =
+\begin{pmatrix}
+286 - 16 & -(22 + 32) & (4 + 104) \\
+-(-44 + 8) & (187 + 16) & -(442 + 8) \\
+(32 + 104) & -(-442 - 8) & (442 + 8)
+\end{pmatrix}.
+\]
+
+\[
+C =
+\begin{pmatrix}
+270 & -54 & 108 \\
+36 & 203 & -450 \\
+136 & 450 & 450
+\end{pmatrix}.
+\]
+
+\subsubsection*{Step 3: Compute the Adjugate \( \text{adj}(M) \)}
+
+\[
+\text{adj}(M) = C^T =
+\begin{pmatrix}
+270 & 36 & 136 \\
+-54 & 203 & 450 \\
+108 & -450 & 450
+\end{pmatrix}.
+\]
+
+\subsubsection*{Step 4: Compute \( M^{-1} \)}
+
+\[
+M^{-1} = \frac{1}{6}
+\begin{pmatrix}
+270 & 36 & 136 \\
+-54 & 203 & 450 \\
+108 & -450 & 450
+\end{pmatrix}.
+\]
+
+Thus, the final inverse is:
+
+\[
+M^{-1} =
+\begin{pmatrix}
+45 & 6 & \frac{68}{3} \\
+-9 & \frac{203}{6} & 75 \\
+18 & -75 & 75
+\end{pmatrix}.
+\]
+
+\end{document}
+
 
 
 
