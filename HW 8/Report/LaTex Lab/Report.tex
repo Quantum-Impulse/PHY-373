@@ -35,4 +35,74 @@
 \maketitle
 
 
+
+
+
+\section*{Question 1(a): Ground State and First Excited State of the 3D Isotropic Harmonic Oscillator}
+\subsection*{Hamiltonian and Separation of Variables}
+\noindent
+The Hamiltonian for the 3D isotropic harmonic oscillator is:
+\begin{equation}
+\hat{H} = \frac{\hat{p}_x^2 + \hat{p}_y^2 + \hat{p}_z^2}{2m} + \frac{1}{2}m\omega^2 (x^2 + y^2 + z^2).
+\end{equation}
+Because it \emph{separates} into a sum of three identical 1D harmonic oscillators, the wavefunction can be written as a product:
+\begin{equation}
+\Psi_{n_x,n_y,n_z}(x,y,z) = \psi_{n_x}(x)\,\psi_{n_y}(y)\,\psi_{n_z}(z),
+\end{equation}
+where each \(\psi_{n}(x)\) is the standard 1D harmonic oscillator solution.
+
+\subsection*{1D Review}
+\noindent\emph{1D ground state}:\quad
+\begin{equation}
+\psi_{0}(x) = \biggl(\frac{m\omega}{\pi\hbar}\biggr)^{\!1/4}\exp\bigl[-\tfrac{m\omega}{2\hbar}\,x^2\bigr].
+\end{equation}
+\noindent\emph{1D first excited state}:\quad
+\begin{equation}
+\psi_{1}(x) = \biggl(\frac{m\omega}{\pi\hbar}\biggr)^{\!1/4}\,\sqrt{2}\,\alpha\,x\,\exp\bigl[-\tfrac{m\omega}{2\hbar}\,x^2\bigr]\quad\text{where}\quad\alpha = \Bigl(\frac{m\omega}{\hbar}\Bigr)^{1/2}.
+\end{equation}
+
+\subsection*{Ground State in 3D}
+\noindent
+For \(n_x=n_y=n_z=0\), the 3D ground state is:
+\begin{equation}
+\Psi_{0,0,0}(x,y,z) = \psi_0(x)\,\psi_0(y)\,\psi_0(z)
+= \biggl(\frac{m\omega}{\pi\hbar}\biggr)^{3/4}\exp\Bigl[-\frac{m\omega}{2\hbar}(x^2 + y^2 + z^2)\Bigr].
+\end{equation}
+
+\subsection*{First Excited States in 3D}
+\noindent
+The energy in 3D is \(\hbar\omega\,(n_x + n_y + n_z + \tfrac32)\). The first excited level occurs when \(n_x + n_y + n_z = 1\). That yields three possible combinations:
+\begin{align*}
+(n_x,n_y,n_z)&=(1,0,0),\\
+(n_x,n_y,n_z)&=(0,1,0),\\
+(n_x,n_y,n_z)&=(0,0,1).
+\end{align*}
+Thus we have three degenerate first-excited states:
+\begin{align*}
+\Psi_{1,0,0}(x,y,z) &= \psi_1(x)\,\psi_0(y)\,\psi_0(z),\\
+\Psi_{0,1,0}(x,y,z) &= \psi_0(x)\,\psi_1(y)\,\psi_0(z),\\
+\Psi_{0,0,1}(x,y,z) &= \psi_0(x)\,\psi_0(y)\,\psi_1(z),
+\end{align*}
+all with energy \(E = \tfrac{5}{2}\hbar\omega\).
+
+\subsection*{Final Results}
+\begin{itemize}
+\item \textbf{Ground State:}
+\begin{equation}
+\Psi_{0,0,0}(x,y,z) = \biggl(\frac{m\omega}{\pi\hbar}\biggr)^{3/4}\exp\Bigl[-\frac{m\omega}{2\hbar}(x^2 + y^2 + z^2)\Bigr].
+\end{equation}
+\item \textbf{First-Excited States (3-fold degenerate):}
+\begin{align*}
+\Psi_{1,0,0}(x,y,z) &= \psi_1(x)\,\psi_0(y)\,\psi_0(z),\\
+\Psi_{0,1,0}(x,y,z) &= \psi_0(x)\,\psi_1(y)\,\psi_0(z),\\
+\Psi_{0,0,1}(x,y,z) &= \psi_0(x)\,\psi_0(y)\,\psi_1(z),
+\end{align*}
+\item \textbf{Energy at first-excited level:}\quad \(E = \frac{5}{2}\hbar\omega.\)
+\end{itemize}
+
+
+
+
+
+
 \end{document}
