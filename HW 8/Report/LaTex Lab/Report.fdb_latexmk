@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1743007771.87909 "/Users/enriquerivera/Documents/School/Y4S2/Quantum/HW 7/Report/LaTex Lab/Report.tex" "Report.pdf" "Report" 1743007772.65781 2
+["pdflatex"] 1741402153.37558 "/Users/enriquerivera/Documents/School/Y4S2/Quantum/HW 7/Report/LaTex Lab/Report.tex" "Report.pdf" "Report" 1741402154.09436 2
   "/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3packages/xparse/xparse.sty" 1741397520.78168 9783 ab4bee47700c04aadedb8da27591b0ab ""
   "/Library/Application Support/MiKTeX/texmfs/install/tex/latex/physics/physics.sty" 1741397368.79231 29610 a9597219b282d9c78b02393dcd7d4322 ""
-  "/Users/enriquerivera/Documents/School/Y4S2/Quantum/HW 7/Report/LaTex Lab/Report.tex" 1743007770.02758 11999 8a44682361e447bb3531e4991b868ce0 ""
+  "/Users/enriquerivera/Documents/School/Y4S2/Quantum/HW 7/Report/LaTex Lab/Report.tex" 1741402152.9353 11999 8a44682361e447bb3531e4991b868ce0 ""
   "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map" 1740535302.04623 29004 acf646c5ef3591b269607c4eb31b7abd ""
   "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1741302525.88105 8733516 731d53d05c9d6cf4c9c5e1a2be7f7b91 ""
   "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1726514607.29738 1004 54797486969f23fa377b128694d548df ""
@@ -94,9 +94,9 @@
   "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcount/refcount.sty" 1726529977.5989 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1726529993.8731 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty" 1726529987.55577 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Report.aux" 1743007772.50221 162 8041607b76d73e3dcbdb7e912bad98fd "pdflatex"
-  "Report.out" 1743007772.4441 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Report.tex" 1743007770.02758 11999 8a44682361e447bb3531e4991b868ce0 ""
+  "Report.aux" 1741402153.93927 162 8041607b76d73e3dcbdb7e912bad98fd "pdflatex"
+  "Report.out" 1741402153.88223 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Report.tex" 1741402152.9353 11999 8a44682361e447bb3531e4991b868ce0 ""
   (generated)
   "Report.aux"
   "Report.log"

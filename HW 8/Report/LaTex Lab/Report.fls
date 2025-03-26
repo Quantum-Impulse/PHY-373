@@ -126,6 +126,12 @@ INPUT /Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/tex
 INPUT /Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 INPUT /Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 INPUT /Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
+INPUT ./Report.out
+INPUT ./Report.out
+INPUT Report.out
+INPUT Report.out
+INPUT ./Report.out
+INPUT ./Report.out
 OUTPUT Report.out
 OUTPUT Report.pdf
 INPUT /Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr17.tfm
