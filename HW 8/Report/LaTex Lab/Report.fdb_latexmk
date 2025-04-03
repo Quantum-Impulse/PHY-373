@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1743086855.35531 "/Users/enriquerivera/Documents/School/Y4S2/Quantum/HW 8/Report/LaTex Lab/Report.tex" "Report.pdf" "Report" 1743086856.11479 0
+["pdflatex"] 1743101217.23088 "/Users/enriquerivera/Documents/School/Y4S2/Quantum/HW 8/Report/LaTex Lab/Report.tex" "Report.pdf" "Report" 1743101218.07929 0
   "/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3packages/xparse/xparse.sty" 1741397520.78168 9783 ab4bee47700c04aadedb8da27591b0ab ""
   "/Library/Application Support/MiKTeX/texmfs/install/tex/latex/physics/physics.sty" 1741397368.79231 29610 a9597219b282d9c78b02393dcd7d4322 ""
-  "/Users/enriquerivera/Documents/School/Y4S2/Quantum/HW 8/Report/LaTex Lab/Report.tex" 1743086855.19412 9721 ee90fbf5476d1679924b683285617ad4 ""
+  "/Users/enriquerivera/Documents/School/Y4S2/Quantum/HW 8/Report/LaTex Lab/Report.tex" 1743101216.6131 23329 039a9722674e491dc6ced7e28f58e439 ""
   "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map" 1740535302.04623 29004 acf646c5ef3591b269607c4eb31b7abd ""
   "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1726514640.68789 14064 b4bac6bb8895f4c689efa688638dea19 ""
   "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1741302525.88105 8733516 731d53d05c9d6cf4c9c5e1a2be7f7b91 ""
@@ -28,6 +28,7 @@
   "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmti12.tfm" 1726514379.2729 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
   "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1726514607.31258 32080 340ef9bf63678554ee606688e7b5339d ""
   "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1726514607.32642 30251 6afa5cb1d0204815a708a080681d4674 ""
+  "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1726514607.33411 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1726514607.33562 36741 fa121aac0049305630cf160b86157ee4 ""
   "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1726514607.33891 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1726514607.34214 35469 70d41d2b9ea31d5d813066df7c99281c ""
@@ -95,9 +96,9 @@
   "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcount/refcount.sty" 1726529977.5989 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1726529993.8731 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty" 1726529987.55577 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Report.aux" 1743086855.92112 373 31c97c363efe8cba9272dc03bceb0375 "pdflatex"
-  "Report.out" 1743086855.8811 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Report.tex" 1743086855.19412 9721 ee90fbf5476d1679924b683285617ad4 ""
+  "Report.aux" 1743101217.82654 1682 26da65794d69510767aafbd1148cfad4 "pdflatex"
+  "Report.out" 1743101217.74665 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Report.tex" 1743101216.6131 23329 039a9722674e491dc6ced7e28f58e439 ""
   (generated)
   "Report.aux"
   "Report.log"
