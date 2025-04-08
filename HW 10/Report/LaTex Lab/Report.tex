@@ -34,8 +34,10 @@
 
 \maketitle
 
-% You can start each question in a new \section* if you want,
-% or keep them in \subsection*, whichever you prefer.
+% ------------------------------------------------------------------------------------------------
+% Question 1
+% ------------------------------------------------------------------------------------------------
+
 
 \section*{Question 1: Expressing $|2; \ell,m\rangle$ in the $|n_1,n_2,n_3\rangle$ Basis}
 
@@ -95,7 +97,7 @@ For $n=2$ and $\ell=0$, we must have $n_r=1$. The single state is $|2;0,0\rangle
 \]
 That combination is fully symmetric among the $(x,y,z)$ directions and carries no angular momentum ($\ell=0$).
 
-\subsection*{Conclusion (Question 1)}
+\subsection*{Conclusion}
 These six states $|2;\ell,m\rangle$ in spherical coordinates map to linear combinations of the six $|n_1,n_2,n_3\rangle$ with $n_1+n_2+n_3=2$. As examples:
 \begin{itemize}
 \item $|2;2,\pm2\rangle = \tfrac{1}{2}\bigl(|2,0,0\rangle - |0,2,0\rangle \pm i\sqrt{2}\,|1,1,0\rangle\bigr)$,
@@ -106,9 +108,39 @@ These superpositions exhaust the full $n=2$ manifold in both bases.
 
 
 
+% ------------------------------------------------------------------------------------------------
+% Question 2
+% ------------------------------------------------------------------------------------------------
 
 
-\section*{Question 2:}
+\section*{Question 2: $\Delta x$ and $\Delta p_x$ in the Hydrogen Ground State}
+
+We consider the hydrogenic ground state, $\psi_{100}(r)$, given by:
+\begin{equation}
+\psi_{100}(r) = \frac{1}{\sqrt{\pi a_0^3}}\, e^{-r/a_0},
+\end{equation}
+where $a_0$ is the Bohr radius. We want $\Delta x$ and $\Delta p_x$.
+
+\subsection*{1. $\Delta x$}
+Since the ground state is spherically symmetric, $\langle x \rangle = 0$, and $\langle x^2\rangle = \frac{1}{3}\langle r^2\rangle$. A standard result (or from integrals) is $\langle r^2\rangle = 3 a_0^2$ for $n=1$ hydrogen. Hence:
+\begin{align*}
+\langle x^2 \rangle &= \frac{1}{3}\times 3 a_0^2 = a_0^2,\\
+\Delta x &= \sqrt{\langle x^2\rangle - \langle x\rangle^2} = a_0.
+\end{align*}
+
+\subsection*{2. $\Delta p_x$}
+In momentum space, one can compute the Fourier transform of $\psi_{100}$, or use that $\langle \mathbf{p}^2\rangle = \hbar^2 / a_0^2$ in the hydrogen ground state. Again by symmetry, $\langle p_x^2\rangle = \frac{1}{3}\langle \mathbf{p}^2\rangle = \frac{\hbar^2}{3 a_0^2}$. Thus:
+\begin{align*}
+\Delta p_x &= \sqrt{\langle p_x^2\rangle} = \sqrt{\frac{\hbar^2}{3 a_0^2}} = \frac{\hbar}{\sqrt{3}\,a_0}.
+\end{align*}
+
+\subsection*{Final Results}
+\begin{equation}
+\boxed{
+\Delta x = a_0, \quad\Delta p_x = \frac{\hbar}{\sqrt{3}\,a_0}.
+}
+\end{equation}
+
 
 
 \section*{Question 3:}
