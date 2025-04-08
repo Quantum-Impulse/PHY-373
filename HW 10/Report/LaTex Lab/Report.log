@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.3.6)  3 APR 2025 18:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.3.6)  8 APR 2025 13:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/enriquerivera/Documents/School/Y4S2/Quantum/HW 9/Report/LaTex Lab/Report.tex"
-(/Users/enriquerivera/Documents/School/Y4S2/Quantum/HW 9/Report/LaTex Lab/Report.tex
+**"/Users/enriquerivera/Documents/School/Y4S2/Quantum/HW 10/Report/LaTex Lab/Report.tex"
+(/Users/enriquerivera/Documents/School/Y4S2/Quantum/HW 10/Report/LaTex Lab/Report.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-30>
 (/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/article.cls
@@ -360,6 +360,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 29.
+ (Report.out) (Report.out)
 \@outlinefile=\write3
 \openout3 = `Report.out'.
 
@@ -375,61 +376,6 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (22.90092pt too wide) detected at line 96
-[]
- []
-
-
-Overfull \hbox (13.56668pt too wide) in paragraph at lines 135--136
-\OT1/cmr/m/n/12 We know that the standard spherical harmonics $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 Y[]\OMS/cmsy/m/n/12 g$ \OT1/cmr/m/n/12 (with $\OML/cmm/m/it/12 m \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1$) form an orthonormal
- []
-
-/Users/enriquerivera/Documents/School/Y4S2/Quantum/HW 9/Report/LaTex Lab/Report.tex:138: Missing $ inserted.
-<inserted text> 
-                $
-l.138 We have three states \($Y_
-                                {1,-1},\,Y_{1,0},\,Y_{1,1}\)$ which satisfy
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-/Users/enriquerivera/Documents/School/Y4S2/Quantum/HW 9/Report/LaTex Lab/Report.tex:139: Package amsmath Error: \begin{align*} allowed only in paragraph mode.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.139 \begin{align*}
-                    
-You've lost some text.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/Users/enriquerivera/Documents/School/Y4S2/Quantum/HW 9/Report/LaTex Lab/Report.tex:142: Package amsmath Error: \hat allowed only in math mode.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.142 ...ar combinations that diagonalize $\hat{L}
-                                                  _x$:
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/Users/enriquerivera/Documents/School/Y4S2/Quantum/HW 9/Report/LaTex Lab/Report.tex:142: Missing $ inserted.
-<inserted text> 
-                $
-l.142 ...r combinations that diagonalize $\hat{L}_
-                                                  x$:
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (59.15797pt too wide) in paragraph at lines 138--143
-\OT1/cmr/m/n/12 We have three states $$Y$[]\OML/cmm/m/it/12 ;  Y[];  Y[]$$whichsatisfyWenowseeknewlinearcombinationsthatdiagonalize$$[]$\OT1/cmr/m/n/12 : 
- []
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -447,86 +393,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[3]
-
-LaTeX Warning: Reference `eq:cartesian-deg' on page 4 undefined on input line 204.
-
-
-LaTeX Warning: Reference `eq:spherical-deg' on page 4 undefined on input line 204.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[4]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[5]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[6]
-
-LaTeX Warning: Reference `eq:transcend' on page 7 undefined on input line 310.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[7] (Report.aux)
+[3] (Report.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-30>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `Report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Report.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `Report.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 11418 strings out of 475833
- 177448 string characters out of 5775518
- 580774 words of memory out of 5000000
- 33859 multiletter control sequences out of 15000+600000
- 568763 words of font info for 77 fonts, out of 8000000 for 9000
+ 11369 strings out of 475833
+ 176978 string characters out of 5775518
+ 576834 words of memory out of 5000000
+ 33851 multiletter control sequences out of 15000+600000
+ 568416 words of font info for 76 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 79i,12n,93p,618b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Report.pdf (7 pages, 215838 bytes).
+ 79i,12n,93p,619b,449s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Report.pdf (3 pages, 111320 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
- 58 named destinations out of 1000 (max. 500000)
+ 82 PDF objects out of 1000 (max. 8388607)
+ 14 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

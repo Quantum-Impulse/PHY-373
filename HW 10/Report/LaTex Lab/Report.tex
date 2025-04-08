@@ -16,7 +16,7 @@
 
 % Custom Header/Footer
 \pagestyle{fancy}
-\fancyhead[L]{PHYSICS 373 - Problem Set 9}
+\fancyhead[L]{PHYSICS 373 - Problem Set 10}
 \fancyhead[R]{Enrique Rivera Jr}
 \fancyfoot[C]{\thepage}
 
@@ -28,303 +28,93 @@
 
 \begin{document}
 
-\title{Problem Set 9 Solutions}
+\title{Problem Set 10 Solutions}
 \author{Enrique Rivera Jr}
 \date{\today}
 
 \maketitle
 
+% You can start each question in a new \section* if you want,
+% or keep them in \subsection*, whichever you prefer.
 
-\section*{Question 1: Applying $L_{-}$ to $Y_{2,2}$}
+\section*{Question 1: Expressing $|2; \ell,m\rangle$ in the $|n_1,n_2,n_3\rangle$ Basis}
 
-\subsection*{1. Highest-weight Spherical Harmonic $Y_{2,2}$}
-We have, in general,
-\begin{equation}
-Y_{l,l}(\theta,\phi) = A_l\, e^{i l \phi}\, \sin^l(\theta), \quad
-A_l = (-1)^l \sqrt{\frac{(2l+1)!}{4\pi}}\,\frac{1}{2^l l!}.
-\end{equation}
-For $l=2$:
-\begin{align*}
-Y_{2,2}(\theta,\phi) &= A_2\, e^{2i\phi}\, \sin^2\theta, \\
-A_2 &= (-1)^2 \sqrt{\frac{5!}{4\pi}}\,\frac{1}{2^2\,2!}
-= \sqrt{\frac{120}{4\pi}}\,\frac{1}{4\cdot 2}
-= \frac{\sqrt{30/\pi}}{8}.
-\end{align*}
-So explicitly:
-\[
-\boxed{\,Y_{2,2}(\theta,\phi) = \frac{\sqrt{30/\pi}}{8}\, e^{2i\phi}\, \sin^2\theta.}\]
-
-\subsection*{2. The Lowering Operator $L_{-}$}
-We recall:
-\begin{equation}
-L_{-} Y_{l,m} = -\,\hbar\,\sqrt{l(l+1) - m(m-1)}\; Y_{l,m-1}.
-\end{equation}
-In the problem statement:
-\begin{equation}
-L_{\pm} = \mp\,\hbar\, e^{\pm i\phi}\Bigl( \frac{\partial}{\partial \theta} \pm i\cot\theta\,\frac{\partial}{\partial \phi}\Bigr).
-\end{equation}
-We apply $L_{-}$ successively to $Y_{2,2}$.
-
-\subsection*{3. Successive Applications of $L_{-}$}
-\paragraph{(a) $n=1$: $m=2\to1$.}
-\begin{align*}
-L_{-} Y_{2,2} &= -\,\hbar \sqrt{2(2+1) - 2(2-1)}\,Y_{2,1}
-= -\,\hbar \sqrt{6 - 2}\,Y_{2,1}
-= -\,\hbar\cdot 2\,Y_{2,1}
-= -2\hbar\,Y_{2,1}.
-\end{align*}
-\paragraph{(b) $n=2$: $m=1\to0$.}
-\(
-L_{-}^2 Y_{2,2} = L_{-}\bigl(L_{-}Y_{2,2}\bigr) = -2\hbar\,L_{-}Y_{2,1}.
-\)
-But:
-\begin{align*}
-L_{-}Y_{2,1} &= -\,\hbar\,\sqrt{6 - 1(1-1)}\,Y_{2,0}
-= -\,\hbar\,\sqrt{6}\,Y_{2,0}.
-\end{align*}
-Hence,
-\(
-L_{-}^2 Y_{2,2} = -2\hbar\bigl( -\hbar\sqrt{6}\bigr)Y_{2,0} = +2\hbar^2\,\sqrt{6}\,Y_{2,0}.
-\)
-
-\paragraph{(c) $n=3$: $m=0\to-1$.}
-\begin{align*}
-L_{-}^3 Y_{2,2} &= L_{-}\bigl(L_{-}^2 Y_{2,2}\bigr)
-= 2\hbar^2\,\sqrt{6}\;\bigl(L_{-}Y_{2,0}\bigr).\\
-L_{-}Y_{2,0} &= -\,\hbar\,\sqrt{6}\,Y_{2,-1}\quad(\text{since }m=0,\,m(m-1)=0\cdot(-1)=0,\,2(2+1)=6).\
-&= -\,\hbar\,\sqrt{6}\,Y_{2,-1}.
-\end{align*}
-Thus,
-\(
-L_{-}^3 Y_{2,2} = 2\hbar^2\sqrt{6}\bigl(-\hbar\sqrt{6}\bigr)\,Y_{2,-1} = -12\hbar^3\,Y_{2,-1}.
-\)
-
-\paragraph{(d) $n=4$: $m=-1\to-2$.}
-\(
-L_{-}^4 Y_{2,2} = L_{-}\bigl(L_{-}^3 Y_{2,2}\bigr)
-= -12\hbar^3\bigl(L_{-}Y_{2,-1}\bigr).
-\)
-Now,
-\begin{align*}
-L_{-}Y_{2,-1} &= -\,\hbar\,\sqrt{6 - (-1)(-2)}\,Y_{2,-2}
-= -\hbar\,\sqrt{6-2}\,Y_{2,-2}
-= -\,\hbar\cdot 2\,Y_{2,-2}
-= -2\hbar\,Y_{2,-2}.
-\end{align*}
-Hence,
-\(
-L_{-}^4 Y_{2,2} = -12\hbar^3\bigl(-2\hbar\bigr)\,Y_{2,-2} = +24\hbar^4\,Y_{2,-2}.
-\)
-
-\subsection*{4. Conclusion and Normalization}
-Each step precisely matches the standard factor:
-\[
-L_{-}Y_{l,m} = -\hbar\,\sqrt{l(l+1)-m(m-1)}\;Y_{l,m-1},
-\]
-and so we indeed obtain \(Y_{2,m}\) with correct normalization. In particular, after four applications of \(L_{-}\) to \(Y_{2,2}\), we get \(Y_{2,-2}\) up to the factor \(24\hbar^4\). This shows consistency with the general formula.
-
-
-
-
-
-
-
-
-\section*{Question 2: Finding Normalized Eigenfunctions of $\hat{L}_x$ in the $\ell=1$ Space}
-
-We know that the standard spherical harmonics $\{Y_{1,m}\}$ (with $m = -1,0,1$) form an orthonormal basis of eigenstates of $\hat{L}_z$. Now we want the linear combinations that diagonalize $\hat{L}_x$.
-
-\subsection*{1. The $\ell=1$ Spherical Harmonics}
-We have three states \($Y_{1,-1},\,Y_{1,0},\,Y_{1,1}\)$ which satisfy
-\begin{align*}
-\hat{L}_z Y_{1,m} &= m\hbar\,Y_{1,m}, \quad m\in\{-1,0,1\}.
-\end{align*}
-We now seek new linear combinations that diagonalize $\hat{L}_x$:
-\begin{equation}
-\hat{L}_x \Psi_{x,\alpha} = \alpha\hbar \Psi_{x,\alpha}, \quad \alpha\in\{-1,0,+1\}.
-\end{equation}
-
-\subsection*{2. Known Linear Combinations}
-By explicit matrix diagonalization (or by analogy to spin-1 rotations), the orthonormal eigenstates of $\hat{L}_x$ in this subspace are:
-\begin{align*}
-\Psi_{x,+\hbar} &= \frac{1}{2}\Bigl(Y_{1,1} \; -\sqrt{2}\; Y_{1,0} \;+ Y_{1,-1}\Bigr),\\
-\Psi_{x,0} &= \frac{1}{\sqrt{2}}\Bigl(Y_{1,1} \; - Y_{1,-1}\Bigr),\\
-\Psi_{x,-\hbar} &= \frac{1}{2}\Bigl(Y_{1,1} \; +\sqrt{2}\; Y_{1,0} \;+ Y_{1,-1}\Bigr).
-\end{align*}
-These states each have eigenvalues \(\pm\hbar\) or 0 under $\hat{L}_x$, and they are all normalized due to the orthonormality of $Y_{1,m}$.
-
-\subsection*{Answer (Question 2)}
-\textbf{Eigenfunctions of $\hat{L}_x$ with $\ell=1$:}
+We have two ways to label the $n=2$ energy eigenstates of the 3D isotropic harmonic oscillator:
 \begin{itemize}
-\item \(\hat{L}_x\)-eigenvalue $+\hbar$:\quad $\displaystyle \Psi_{x,+\hbar} = \frac{1}{2}\bigl(Y_{1,1} - \sqrt{2}\,Y_{1,0} + Y_{1,-1}\bigr).$
-\item \(\hat{L}_x\)-eigenvalue $0$:\quad $\displaystyle \Psi_{x,0} = \frac{1}{\sqrt{2}}\bigl(Y_{1,1} - Y_{1,-1}\bigr).$
-\item \(\hat{L}_x\)-eigenvalue $-\hbar$:\quad $\displaystyle \Psi_{x,-\hbar} = \frac{1}{2}\bigl(Y_{1,1} + \sqrt{2}\,Y_{1,0} + Y_{1,-1}\bigr).$
+  \item \textbf{Cartesian basis:} $|n_1,n_2,n_3\rangle$, where $n_1+n_2+n_3=2$. There are exactly 6 such states:
+  \begin{equation*}
+    |2,0,0\rangle,\;|0,2,0\rangle,\;|0,0,2\rangle,\;|1,1,0\rangle,\;|1,0,1\rangle,\;|0,1,1\rangle.
+  \end{equation*}
+  \item \textbf{Spherical basis:} $|n;\ell,m\rangle$ with $n=2$. Then $n=2$ can split into $(n_r,\ell)$ satisfying $2n_r+\ell=2$. We get:
+  \begin{itemize}
+    \item $\ell=0,\,n_r=1$ (1 state: $|2;0,0\rangle$),
+    \item $\ell=2,\,n_r=0$ (5 states: $|2;2,m\rangle$, $m=-2\dots+2$).
+  \end{itemize}
+  So total of 6 states again.
 \end{itemize}
 
+Below we show how each $|2;\ell,m\rangle$ is written as a linear combination of $|n_1,n_2,n_3\rangle$.
 
+\subsection*{1. The $\ell=2$ Multiplet (Five States)}
+Since $\ell=2$, $m$ runs from $-2$ to $+2$. We have 5 states: $m=-2,-1,0,1,2$.
 
-
-
-
-
-\section*{Question 3: Degeneracy of the 3D Isotropic Harmonic Oscillator in Spherical Coordinates}
-
-We already know from Cartesian coordinates that the $n$-th excited state has degeneracy
-\begin{equation}
-\label{eq:cartesian-deg}
- g_n = \binom{n+2}{2} = \frac{(n+1)(n+2)}{2}.
-\end{equation}
-Here is how to see the same result in \emph{spherical} coordinates.
-
-\subsection*{1. Spherical-Coordinate Labeling}
-In spherical coordinates, each energy eigenstate of the 3D isotropic harmonic oscillator is labeled by \(n_r\ge 0\) (radial) and \(\ell\ge 0\) (angular momentum). The total energy level index is \(N = 2n_r + \ell\). Thus the energy is proportional to \(N + \tfrac32\). If we call \(n = N\) the excitation level, then
-\begin{equation}
- n = 2n_r + \ell.
-\end{equation}
-For a given \(\ell\), there are \(2\ell + 1\) possible \(m\) values, i.e., the usual degeneracy from angular momentum.
-
-\subsection*{2. Summation Over $\ell$}
-We must sum over all integer pairs \((n_r,\ell)\) such that \(2n_r + \ell = n\). That is equivalent to summing over \(\ell = n, n-2, n-4, \dots\) down to 0 or 1, depending on parity of \(n\). Each \(\ell\) contributes an angular degeneracy of \(2\ell + 1\). Hence:
-\begin{equation}
-\label{eq:spherical-deg}
- g_n = \sum_{\substack{\ell=0\text{ (or 1)}\\\ell\equiv n\,\mathrm{mod}\,2}}^{\ell\le n} (2\ell + 1).
-\end{equation}
-
-\subsection*{3. Computing the Sum}
-\paragraph{Case 1: $n=2p$ (Even).}\quad Then \(\ell = 2p, 2p-2, \dots, 0\). The number of terms is \(p+1\). Summation of \((2\ell + 1)\) over these values yields exactly the same binomial coefficient result:
+\paragraph{(a) $|2;2,\pm2\rangle$.}
+It is given (and can be verified by symmetry arguments) that:
 \[
-\sum_{k=0}^{p} [2(2p - 2k) + 1] = (n+1)(n+2)/2, \quad\text{where }n=2p.
-\]
-\paragraph{Case 2: $n=2p+1$ (Odd).}\quad Then \(\ell = 2p+1, 2p-1, \dots, 1\). A similar arithmetic series argument gives the same final formula:
-\[
- g_n = \binom{n+2}{2} = \frac{(n+1)(n+2)}{2}.
-\]
-
-\subsection*{Conclusion}
-Either by Cartesian counting (Eq.~\ref{eq:cartesian-deg}) or by summation in spherical coordinates (Eq.~\ref{eq:spherical-deg}), we get the \emph{same} degeneracy
-\begin{equation}
-\boxed{g_n = \frac{(n+1)(n+2)}{2},}
-\end{equation}
-confirming consistency of the two methods.
-
-
-
-
-
-
-
-\section*{Question 4: Computing $\langle r^2 \rangle$ in Two Cases}
-\subsection*{(a) First Excited State of the 3D Isotropic Harmonic Oscillator}
-For a 3D isotropic HO, energy levels are labeled by $(n_r,\ell)$, with total $N = 2n_r + \ell$. The first excited state corresponds to $N=1$, i.e. $(n_r=0,\ell=1)$. A known standard result is:
-\begin{equation}
-\langle r^2 \rangle_{n_r,\ell} = \frac{\hbar}{m\omega}\Bigl(2n_r + \ell + \tfrac{3}{2}\Bigr).
-\end{equation}
-Hence, for $(n_r=0,\ell=1)$:
-\begin{equation}
-\langle r^2 \rangle = \frac{\hbar}{m\omega}\Bigl(1 + \tfrac{3}{2}\Bigr) = \frac{5\hbar}{2\,m\,\omega}.
-\end{equation}
-
-\subsection*{(b) Ground State of the Infinite Spherical Well}
-Consider a spherical well of radius $a$, $V(r)=0$ for $r\le a$ and $\infty$ otherwise. The $\ell=0$ ground state has radial wavefunction:
-\begin{equation}
-\Psi_0(r,\theta,\phi) = \frac{1}{\sqrt{4\pi}}\,\frac{1}{r}\sqrt{\frac{2}{a}}\,\sin\Bigl(\frac{\pi r}{a}\Bigr), \quad 0\le r\le a.
-\end{equation}
-Thus,
-\begin{equation}
-\langle r^2 \rangle = \int_0^a \int_\Omega |\Psi_0(r,\theta,\phi)|^2 r^2 \,d^3x.
-\end{equation}
-After integrating over angles, the radial integral becomes:
-\begin{equation}
-\langle r^2 \rangle = \int_0^a \Bigl(\frac{2}{a}\sin^2\bigl(\tfrac{\pi r}{a}\bigr)\Bigr) r^2 \,dr.
-\end{equation}
-Define $I = \int_0^a r^2\sin^2(\tfrac{\pi r}{a})\,dr$, and use $\sin^2 x = \tfrac12[1 - \cos(2x)]$. Standard integrals yield:
-\begin{equation}
-I = \frac{a^3}{6} - \frac{a^3}{4\pi^2},
-\end{equation}
-so
-\begin{equation}
-\langle r^2 \rangle = \frac{2}{a}\,I = 2\,\frac{1}{a}\Bigl(\frac{a^3}{6} - \frac{a^3}{4\pi^2}\Bigr)
-= a^2 \Bigl(\frac{1}{3} - \frac{1}{2\pi^2}\Bigr).
-\end{equation}
-
-\subsection*{Answer (Question 4)}
-\begin{itemize}
-\item \textbf{First Excited State of 3D HO:}\quad $\displaystyle \langle r^2 \rangle = \frac{5\hbar}{2\,m\,\omega}.$
-\item \textbf{Ground State of Infinite Spherical Well (radius $a$):}\quad $\displaystyle \langle r^2 \rangle = a^2\Bigl(\tfrac{1}{3} - \tfrac{1}{2\pi^2}\Bigr).$
-\end{itemize}
-
-
-
-
-
-
-
-\section*{Question 5: Finite Spherical Well ($\ell=0$ Ground State)}
-Consider the spherical potential
-\begin{equation}
-V(r) = \begin{cases}
--\,V_0, & 0 \le r \le a,\\
-0, & r > a,
-\end{cases}
-\end{equation}
-with $V_0 > 0$. We seek the $\ell=0$ ground state, so the radial wavefunction is $u(r)/r$ with $u(0)=0$.
-
-\subsection*{1. Radial Schr\"odinger Equation}
-For $\ell=0$:
-\begin{align*}
--\frac{\hbar^2}{2m}\frac{d^2 u}{dr^2} + V(r)\,u(r) &= E\,u(r).
-\end{align*}
-\paragraph{(a) Inside ($0\le r\le a$, $V=-V_0$):}
-\[
--\frac{\hbar^2}{2m}\frac{d^2 u}{dr^2} - V_0\,u(r) = E\,u(r)\;\Longrightarrow\; -\frac{\hbar^2}{2m}\frac{d^2 u}{dr^2} = (E+V_0)\,u(r).
-\]
-Define $k^2 = \tfrac{2m}{\hbar^2}(V_0 + E)$ and get $u_{\text{in}}(r) = A\sin(kr) + B\cos(kr)$. Regularity at $r=0$ forces $B=0$, so $u_{\text{in}}(r)=A\sin(kr).$
-
-\paragraph{(b) Outside ($r > a$, $V=0$):}
-\(
--\frac{\hbar^2}{2m}\frac{d^2 u}{dr^2} = E\,u(r).\)
-With $E<0$ for a bound state, let $\kappa^2 = -\tfrac{2mE}{\hbar^2}>0$. Then the physical solution is $u_{\text{out}}(r)=C e^{-\kappa r}.$
-
-\subsection*{2. Boundary Conditions at $r=a$}
-1. Continuity of $u(r)$: $u_{\text{in}}(a) = u_{\text{out}}(a)$. i.e.
-\[
-A\sin(ka) = C e^{-\kappa a}.
-\]
-2. Continuity of $u'(r)$: $u_{\text{in}}'(a) = u_{\text{out}}'(a)$. Inside derivative: $A\,k\cos(ka).$ Outside derivative: $-\kappa\,C e^{-\kappa a}.$ So
-\[
-A\,k\cos(ka) = -\kappa\,C e^{-\kappa a}.
-\]
-Eliminate $C$ using the first condition, leading to
-\(
-A\,k\cos(ka) = -\kappa\Bigl(\frac{A\,\sin(ka)}{e^{-\kappa a}}\Bigr)e^{-\kappa a}\;\Longrightarrow\; k\cos(ka) = -\kappa\,\sin(ka).\)
-Hence
-\begin{equation}
-\label{eq:transcend}
-\frac{k}{\kappa} = -\tan(ka).
-\end{equation}
-\subsection*{3. Defining $k,\kappa$ in terms of $E$}
-\begin{align*}
-&k^2 = \frac{2m}{\hbar^2}\bigl(V_0+E\bigr), \quad E+V_0>0,\\
-&\kappa^2 = -\frac{2mE}{\hbar^2},\quad E<0.\
-\end{align*}
-Equation (\ref{eq:transcend}) becomes:
-\begin{equation}
-\sqrt{\frac{V_0 + E}{-E}} = -\tan\bigl(a\,\sqrt{\tfrac{2m}{\hbar^2}(V_0 + E)}\bigr).
-\end{equation}
-One solves this numerically for $E<0$ to find the $\ell=0$ ground-state energy.
-
-\subsection*{Answer (Question 5)}
-\textbf{The ground state for $\ell=0$} is found by solving the transcendental condition:
-\begin{equation}
 \boxed{
-\sqrt{\frac{V_0 + E}{-E}}\;=\;-\,\tan\Bigl(a\,\sqrt{\tfrac{2m}{\hbar^2}(V_0 + E)}\Bigr),
+|2;2,\pm 2\rangle
+= \frac{1}{2}\Bigl[|2,0,0\rangle \;-\; |0,2,0\rangle \;\pm\; i\,\sqrt{2}\,|1,1,0\rangle\Bigr].
 }
-\end{equation}
-which is fully analogous to the 1D finite square well but in spherical geometry.
+\]
+The $\pm2$ indicates that we attach the $\pm i$ factor times $\sqrt{2}$. This ensures these states behave like the $m=\pm2$ spherical harmonics.
+
+\paragraph{(b) $|2;2,0\rangle$.}
+One finds
+\[
+\boxed{
+|2;2,0\rangle = \frac{1}{\sqrt{6}}\Bigl[|2,0,0\rangle + |0,2,0\rangle \;-\; 2\,|0,0,2\rangle\Bigr].
+}
+\]
+Here we see a combination that is symmetric in $(x,y)$ but subtracts out the $z$ direction in a certain proportion. This matches the $\ell=2,m=0$ spherical harmonic in the HO Fock basis.
+
+\paragraph{(c) $|2;2,\pm1\rangle$.}
+Often written as linear combinations involving $|1,0,1\rangle$ and $|0,1,1\rangle$, plus some portion of $|2,0,0\rangle$ and $|0,2,0\rangle$, with appropriate phases. A typical set (with some sign conventions) is:
+\begin{align*}
+|2;2,+1\rangle &= \frac{1}{2}\Bigl[|2,0,0\rangle + |0,2,0\rangle \;-\;\sqrt{2}\,(|1,0,1\rangle + i\,|0,1,1\rangle)\Bigr],\\
+|2;2,-1\rangle &= \frac{1}{2}\Bigl[|2,0,0\rangle + |0,2,0\rangle \;+\;\sqrt{2}\,(|1,0,1\rangle - i\,|0,1,1\rangle)\Bigr].
+\end{align*}
+Exact sign details can vary based on phase conventions.
+
+\subsection*{2. The $\ell=0$ State (One State)}
+For $n=2$ and $\ell=0$, we must have $n_r=1$. The single state is $|2;0,0\rangle$. By orthogonality with the $\ell=2$ subspace, we find:
+\[
+\boxed{
+|2;0,0\rangle
+= \frac{1}{\sqrt{3}}\Bigl[|1,1,0\rangle + |1,0,1\rangle + |0,1,1\rangle\Bigr].
+}
+\]
+That combination is fully symmetric among the $(x,y,z)$ directions and carries no angular momentum ($\ell=0$).
+
+\subsection*{Conclusion (Question 1)}
+These six states $|2;\ell,m\rangle$ in spherical coordinates map to linear combinations of the six $|n_1,n_2,n_3\rangle$ with $n_1+n_2+n_3=2$. As examples:
+\begin{itemize}
+\item $|2;2,\pm2\rangle = \tfrac{1}{2}\bigl(|2,0,0\rangle - |0,2,0\rangle \pm i\sqrt{2}\,|1,1,0\rangle\bigr)$,
+\item $|2;0,0\rangle = \tfrac{1}{\sqrt{3}}\bigl(|1,1,0\rangle + |1,0,1\rangle + |0,1,1\rangle\bigr)$,
+\item $|2;2,\pm1\rangle$ have slightly more complicated combos involving $|1,0,1\rangle$ and $|0,1,1\rangle$ as well.
+\end{itemize}
+These superpositions exhaust the full $n=2$ manifold in both bases.
 
 
 
 
+
+\section*{Question 2:}
+
+
+\section*{Question 3:}
+
+
+\section*{Question 4:}
 
 
 
