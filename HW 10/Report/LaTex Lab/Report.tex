@@ -142,11 +142,144 @@ In momentum space, one can compute the Fourier transform of $\psi_{100}$, or use
 \end{equation}
 
 
-
+% ------------------------------------------------------------------------------------------------
+% Question 3
+% ------------------------------------------------------------------------------------------------
 \section*{Question 3:}
+\section*{Question 3(a): Probability Inside Radius $b$ for $\psi_{2,1,m}$}
+
+\subsectiThe hydrogenic wavefunction $\psi_{n,\ell,m}(r,\theta,\phi)$ factors as $R_{n,\ell}(r)\,Y_{\ell,m}(\theta,\phi)$. The probability inside radius $b$ is:
+\begin{equation}
+P(b) = \int_0^b \int_{\Omega} |\psi_{2,1,m}(r,\theta,\phi)|^2\,r^2\sin\theta\,dr\,d\theta\,d\phi.
+\end{equation}
+Because $\int_{\Omega} |Y_{1,m}|^2 d\Omega = 1$ for any $m$, we get:
+\begin{equation}
+P(b) = \int_0^b |R_{2,1}(r)|^2\,r^2\,dr.
+\end{equation}
+Hence the probability is independent of $m$. Also, as $b\to\infty$, $P\to1$.
+
+\subsection*{2. Express in Terms of $b/a$}
+The radial function for $n=2,\ell=1$ is typically
+\begin{equation}
+R_{2,1}(r) = \frac{1}{2\sqrt{6}\,a^{3/2}}\,\Bigl(\frac{r}{a}\Bigr) e^{-\frac{r}{2a}} \quad (a=\text{Bohr radius}).
+\end{equation}
+Thus $|R_{2,1}(r)|^2$ becomes a function of $r/a$. Defining $x=b/a$, we get
+\begin{equation}
+P(x) = \int_0^x F(\rho)\,d\rho,\quad \rho = r/a.
+\end{equation}
+This is cleaon*{1. Radial-Angular Factorization}
+rly a function of $b/a$ alone, going to 1 as $b/a\to\infty$.
+
+\subsection*{Answer (3a)}
+\textbf{Probability inside radius $b$ is:}
+\begin{equation}
+P\bigl(\tfrac{b}{a}\bigr) = \int_0^{b} |R_{2,1}(r)|^2\,r^2\,dr,
+\end{equation}
+independent of $m$. Expressing $r$ in units of $a$ yields a dimensionless function of $b/a$, which $\to1$ as $b/a\to\infty$.
 
 
-\section*{Question 4:}
+
+
+
+
+
+\section*{Question 3(b): Small-$\frac{b}{a}$ Expansion of Probability \& Finding $c$}
+
+Recall from part (a), the probability inside radius $b$ for the state $\psi_{2,1,m}$ is:
+\begin{equation}
+P(b) = \int_0^b |R_{2,1}(r)|^2 \, r^2 \,dr,
+\end{equation}
+where
+\begin{align*}
+R_{2,1}(r) &= \frac{1}{2\sqrt{6}\,a^{3/2}}\,\Bigl(\frac{r}{a}\Bigr) e^{-r/(2a)},\\
+|R_{2,1}(r)|^2 &= \frac{1}{24\,a^3}\,\Bigl(\frac{r}{a}\Bigr)^2 e^{-r/a}.
+\end{align*}
+
+\subsection*{1. Leading Behavior for $r \ll a$}
+When $r\ll a$, $e^{-r/a}\approx 1$. Hence
+\begin{equation}
+|R_{2,1}(r)|^2 \approx \frac{1}{24\,a^3}\,\Bigl(\frac{r}{a}\Bigr)^2
+= \frac{r^2}{24\,a^5}.
+\end{equation}
+Thus,
+\begin{align*}
+P(b) &= \int_0^b |R_{2,1}(r)|^2 \, r^2\,dr \approx \int_0^b \frac{r^2}{24\,a^5}\,r^2\,dr
+= \frac{1}{24\,a^5} \int_0^b r^4\,dr \\[6pt]
+&= \frac{1}{24\,a^5}\,\frac{b^5}{5} = \frac{b^5}{120\,a^5}.
+\end{align*}
+
+\subsection*{2. Hence $P(b) \sim c\,(\tfrac{b}{a})^5$}
+We see that
+\begin{equation}
+P(b) \approx \frac{1}{120}\,\Bigl(\frac{b}{a}\Bigr)^5,
+\end{equation}
+so $c=\tfrac{1}{120}$. This confirms the desired form,
+\begin{equation}
+P\bigl(\tfrac{b}{a}\bigr) \sim \frac{1}{120}\,\Bigl(\tfrac{b}{a}\Bigr)^5\quad\text{for}\; b\ll a.
+\end{equation}
+
+\subsection*{Answer (3b)}
+For small $b/a$, the pro
+
+
+
+% ------------------------------------------------------------------------------------------------
+% Question 4
+% ------------------------------------------------------------------------------------------------
+\section*{Question 4: Time Evolution in a Uniform Magnetic Field}
+We have the Hamiltonian:
+\begin{equation}
+H = \frac{\hat{p}^2}{2m_e} - \frac{e^2}{4\pi \epsilon_0 \\,r} + \frac{eB}{2m_e}\,\hat{L}_z,
+\end{equation}
+and the initial wavefunction
+\begin{equation}
+\Psi(\mathbf{x},0) = \frac{1}{\sqrt{32\pi a^3}}\,\frac{r}{a}\,e^{-r/2a}\,\sin\theta\,\cos\phi.
+\end{equation}
+Below we find $\Psi(\mathbf{x},t)$.
+
+\subsection*{1. Observing the $\hat{L}_z$ Term}
+\begin{itemize}
+\item The usual hydrogen Hamiltonian is $H_0 = \tfrac{\hat{p}^2}{2m_e} - \tfrac{e^2}{4\pi\epsilon_0}\,\tfrac{1}{r}$. Here we add $\tfrac{eB}{2m_e}\hat{L}_z$, so the energy eigenstates remain $|n,\ell,m\rangle$ but each acquires an energy shift $\Delta E = (eB/2m_e)(m\hbar)$.
+\item Hence the full Hamiltonian is $H_0 + (\tfrac{eB}{2m_e}\hat{L}_z)$, and $|n,\ell,m\rangle$ are still eigenstates, with new energies:
+\begin{equation}
+E_{n,\ell,m} = E_{n,\ell}^{(0)} + \frac{eB}{2m_e}\,m\hbar.
+\end{equation}
+\end{itemize}
+
+\subsection*{2. Identifying the Initial State}
+We have
+\begin{equation}
+\Psi(\mathbf{x},0) = \Bigl(\text{radial factor}\Bigr)\,\sin\theta\,\cos\phi.
+\end{equation}
+One sees the radial factor $\propto r e^{-r/2a}$ suggests $n=2,\ell=1$. Meanwhile, $\sin\theta\,\cos\phi$ is a combination of $Y_{1,\pm1}(\theta,\phi)$, since $\cos\phi = \tfrac{1}{2}(e^{i\phi}+e^{-i\phi})$. So we get roughly an equal superposition of $m=+1$ and $m=-1$ with no $m=0$ component.
+
+So (up to normalization checks)
+\begin{equation}
+\Psi(\mathbf{x},0) = \frac{1}{\sqrt{2}}\bigl(\psi_{2,1,+1} + \psi_{2,1,-1}\bigr).
+\end{equation}
+
+\subsection*{3. Time Evolution}
+Since $\psi_{n,\ell,m}$ remain eigenstates of $H$, we simply attach phase factors $e^{-i E_{n,\ell,m} t/\hbar}$. Concretely:
+\begin{align*}
+E_{2,1,+1} &= E_{2,1}^{(0)} + \frac{eB}{2m_e}(+1)\hbar,\\
+E_{2,1,-1} &= E_{2,1}^{(0)} + \frac{eB}{2m_e}(-1)\hbar.
+\end{align*}
+Hence:
+\begin{align*}
+\Psi(\mathbf{x},t)
+&= \frac{1}{\sqrt{2}}\Bigl[e^{-i E_{2,1,+1} t/\hbar}\,\psi_{2,1,+1}(\mathbf{x}) + e^{-i E_{2,1,-1} t/\hbar}\,\psi_{2,1,-1}(\mathbf{x})\Bigr].
+\end{align*}
+
+\subsection*{Answer (Question 4)}
+\begin{equation}
+\boxed{
+\Psi(\mathbf{x},t)
+= \frac{1}{\sqrt{2}}\Bigl(e^{-\frac{i}{\hbar}E_{2,1,+1}t}\,\psi_{2,1,+1}(\mathbf{x}) \;+\; e^{-\frac{i}{\hbar}E_{2,1,-1}t}\,\psi_{2,1,-1}(\mathbf{x})\Bigr).
+}
+\end{equation}
+where $E_{2,1,\pm1} = E_{2,1}^{(0)} + \tfrac{eB}{2m_e}(\pm1)\hbar.$
+
+
 
 
 
