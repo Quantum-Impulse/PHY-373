@@ -1,0 +1,251 @@
+\documentclass[12pt]{article}
+
+% ----------------------------------------------------------------------
+% basic packages
+\usepackage{amsmath, amssymb, physics}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+
+% ----------------------------------------------------------------------
+% paragraph spacing; no indent
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% handy vertical‑space macros
+\newcommand{\qs}{\bigskip\bigskip}
+\newcommand{\vv}{\medskip}
+
+% -------------------------------------------------------  document  ---
+\begin{document}
+
+% =========================================================================
+\begin{center}
+  {\Large\bfseries PHYSICS 373 \\
+               Second Mid‑Term Examination}\\[2ex]
+  Time limit: \textbf{1 hour} \quad (calculator permitted)
+\end{center}
+
+% --------------------------------------------------------------------- %
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Q 1 – True / False (with short explanations)           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section*{Question 1 — True / False (circle one)}
+
+\begin{enumerate}[label=\textbf{\alph*)},itemsep=1.2\baselineskip]
+
+%----------------------------------------------------------
+\item \textbf{For the 3‑D isotropic harmonic oscillator, the $n=2$ energy level is 6‑fold
+      degenerate.}
+
+      \textbf{Answer:} \textbf{T}\\
+      \textbf{Why?}  In three dimensions the degeneracy is
+      $\displaystyle g_n=\binom{n+2}{2}$.  
+      For $n=2$ one obtains $g_2=\binom{4}{2}=6$.\par
+      \emph{Concept cue:}  The integer $n=n_1+n_2+n_3$ can be “distributed’’ among
+      the three Cartesian directions in $\binom{n+2}{2}$ ways (stars‑and‑bars
+      combinatorics).
+
+%----------------------------------------------------------
+\item \textbf{The spherical harmonic $Y_{\ell,\ell}(\theta,\phi)$ is independent of $\theta$.}
+
+      \textbf{Answer:} \textbf{F}\\
+      \textbf{Why?}  $Y_{\ell,\ell}\propto\sin^\ell\!\theta\,e^{i\ell\phi}$;
+      the $\sin^\ell\!\theta$ factor clearly depends on~$\theta$.\par
+      \emph{Concept cue:}  Highest‑weight harmonics peak on the equator
+      ($\theta=\pi/2$) and vanish at the poles, so some $\theta$‑dependence is
+      unavoidable.
+
+%----------------------------------------------------------
+\item \textbf{Adding the operator $\dfrac{eB}{2m_e}\,\hat L_z$ to the hydrogen Hamiltonian
+      removes \emph{all} degeneracy of the $n=2$ levels.}
+
+      \textbf{Answer:} \textbf{F}\\
+      \textbf{Why?}  The Zeeman term lifts only the $m$ (magnetic) degeneracy; the
+      $\ell$‑degeneracy between $2s$ and $2p$ states
+      ($\ell=0$ vs.\ $\ell=1$) survives.\par
+      \emph{Concept cue:}  A perturbation $\propto\hat L_z$ shifts states with
+      different $m$’s but leaves states that share the same $m$ unaffected,
+      regardless of~$\ell$.
+
+%----------------------------------------------------------
+\item \textbf{For any Hermitian operator $\hat F$ and any quantum state
+      $\ket{\psi}$, the product $\Delta F\,\Delta L_z$ can reach zero.}
+
+      \textbf{Answer:} \textbf{F}\\
+      \textbf{Why?}  Both uncertainties vanish only if $\ket{\psi}$ is a simultaneous
+      eigenstate of \(\hat F\) and \(\hat L_z\), which requires
+      $[\hat F,\hat L_z]=0$.  For a generic Hermitian $\hat F$ this commutator is
+      non‑zero, so the product cannot be zero (Heisenberg
+      inequality).\par
+      \emph{Concept cue:}  Zero uncertainties in two observables are possible
+      \emph{only} when the observables commute and the state lies in their common
+      eigenbasis.
+
+%----------------------------------------------------------
+\item \textbf{The spin‑$\tfrac{3}{2}$ matrices can be chosen purely real in the
+      $S_z$ eigen‑basis.}
+
+      \textbf{Answer:} \textbf{F}\\
+      \textbf{Why?}  While $\hat S_z$ is real and diagonal in that basis,
+      at least one of $\hat S_x,\hat S_y$ must contain imaginary entries;
+      in particular $\hat S_y$ is proportional to the anti‑Hermitian part
+      $(\hat S_+-\hat S_-)$ and cannot be made real simultaneously with
+      $\hat S_x$.\par
+      \emph{Concept cue:}  The spin commutation relation
+      $[\hat S_x,\hat S_y]=i\hbar\hat S_z$ forces an $i$ in \emph{some}
+      matrix entries in any basis.
+
+\end{enumerate}
+
+% --------------------------------------------------------------------- %
+\newpage
+{\large\bfseries 2.\; Ladder‑operator algebra and degeneracy}\qs
+
+For the 3‑D isotropic harmonic oscillator we label Cartesian
+states by $\ket{n_1,n_2,n_3}$ with
+$n=n_1+n_2+n_3$ and spherical states by $\ket{n; \ell, m}$.
+
+\begin{enumerate}[label=\textbf{\alph*)}, leftmargin=1.2cm]
+  \item  Derive the six explicit relations that express the
+         $\ket{2;\ell,m}$ states in the Cartesian basis. (You may quote
+         the raising‑operator identities from Problem Set 8.)\vv
+  \item  From your result deduce the
+         degeneracy formula $g_n = \dbinom{n+2}{2}$ for general $n$.
+\end{enumerate}
+
+% --------------------------------------------------------------------- %
+\newpage
+{\large\bfseries 3.\; Hydrogen atom — uncertainties}\qs
+
+The ground‑state wave‑function of hydrogen is
+$\displaystyle \psi_{100}(r)=\frac{1}{\sqrt{\pi a^3}}e^{-r/a}$.
+
+\begin{enumerate}[label=\textbf{\alph*)}, leftmargin=1.2cm]
+  \item  Compute $\expval{x}$, $\expval{x^2}$ and hence
+         $\displaystyle\Delta x$.\vv
+  \item  Using 
+         $\hat p_x = -i\hbar\dv{}{x}$
+         in Cartesian components,
+         show that
+         $\displaystyle\Delta p_x = \frac{\hbar}{a}$.\vv
+  \item  Verify that the Heisenberg product
+         $\Delta x\,\Delta p_x$ exceeds $\hbar/2$.
+\end{enumerate}
+
+% --------------------------------------------------------------------- %
+\newpage
+{\large\bfseries 4.\; Probability inside a sphere (excited hydrogen)}\qs
+
+For the $n=2$, $\ell=1$ hydrogen states
+\[
+  \psi_{2;1,m}(r,\theta,\phi)
+  = \frac{1}{(32\pi a^5)^{1/2}}\,
+    r\,e^{-r/2a}\,Y_{1m}(\theta,\phi),
+\]
+define $P(b)$ to be the probability of finding the electron inside
+$r\le b$.
+
+\begin{enumerate}[label=\textbf{\alph*)}, leftmargin=1.2cm]
+  \item  Show that
+    $\displaystyle
+      P(b)=1-e^{-b/a}\!\Bigl(1+\frac{b}{a}+\tfrac12\frac{b^{2}}{a^{2}}\Bigr)
+      $ and comment on its $m$‑independence.\vv
+  \item  Expand for small $b/a$ and confirm that
+        $P(b)\approx \dfrac{1}{15}\bigl(b/a\bigr)^{5}$.
+\end{enumerate}
+
+% --------------------------------------------------------------------- %
+\newpage
+{\large\bfseries 5.\; Charged particle in $\,\mathbf B\!$ + axial trap}\qs
+
+A particle of charge $q$ moves in $\mathbf B=B_0\hat z$ with vector
+potential $\mathbf A=(0,B_0x,0)$ and is confined by
+$V=\frac12m\omega_0^{2}z^{2}$.
+
+\begin{enumerate}[label=\textbf{\alph*)}, leftmargin=1.2cm]
+  \item  Using separation of variables and Landau‑level notation,
+         write down the complete set of energy eigenvalues.\vv
+  \item  State the degeneracy of each Landau level for a fixed box size
+         $L_y$ (periodic boundary conditions).\vv
+  \item  Briefly explain how the $z$‑motion modifies the density of
+         states compared with the pure‑2D case.
+\end{enumerate}
+
+% --------------------------------------------------------------------- %
+\newpage
+{\large\bfseries 6.\; Spin‑$\tfrac32$ matrices}\qs
+
+With the ordered basis
+$\{\ket{+3/2},\ket{+1/2},\ket{-1/2},\ket{-3/2}\}$ take
+\[
+  \hat S_z = \frac{\hbar}{2}
+    \begin{pmatrix} 3&0&0&0\\ 0&1&0&0\\ 0&0&-1&0\\ 0&0&0&-3 \end{pmatrix}.
+\]
+
+\begin{enumerate}[label=\textbf{\alph*)}, leftmargin=1.2cm]
+  \item  Construct $\hat S_+$ and $\hat S_-$ via
+        $\hat S_\pm=\hat S_x\pm i\hat S_y$ and give
+        explicit $4\times4$ matrices.\vv
+  \item  Hence write $\hat S_x$ and $\hat S_y$ and verify that they are
+        Hermitian.\vv
+  \item  Confirm the commutation relation
+        $[\hat S_x,\hat S_y]=i\hbar\hat S_z$ in this representation.
+\end{enumerate}
+
+% --------------------------------------------------------------------- %
+\newpage
+{\large\bfseries 7.\; Spin–\,$\tfrac12$ in an infinite square well}\qs
+
+Consider the Hamiltonian
+$
+ \hat H = \hat p^{2}/2m + V(x)\,\openone_2 + \beta\,\hat S_x
+$
+with $V(x)=0$ for $0<x<L$ and $V=\infty$ otherwise.
+
+\begin{enumerate}[label=\textbf{\alph*)}, leftmargin=1.2cm]
+  \item  Solve the time‑independent Schrödinger equation and give the
+        energy eigenvalues.\vv
+  \item  If the initial state is
+        $
+          \displaystyle
+          \Psi(x,0)=\sqrt{\frac{2}{L}}
+          \begin{pmatrix}
+            \sin\!\bigl(\pi x/L\bigr)\\[4pt] 0
+          \end{pmatrix},
+          $
+        find $\Psi(x,t)$.\vv
+  \item  Determine the probability that a measurement of $\hat S_x$ at
+        time $t$ yields $+\tfrac{\hbar}{2}$.
+\end{enumerate}
+
+% --------------------------------------------------------------------- %
+\newpage
+{\large\bfseries 8.\; Spin‑rotation operators}\qs
+
+In the spin‑\,$\tfrac12$ representation $\hat S = \frac{\hbar}{2}\,\boldsymbol\sigma$.
+
+\begin{enumerate}[label=\textbf{\alph*)}, leftmargin=1.2cm]
+  \item  Show that
+        $\displaystyle
+          U_x(\alpha)=e^{-i\alpha\hat S_x/\hbar}
+          =\cos\!\frac{\alpha}{2}\,\openone
+          -i\sin\!\frac{\alpha}{2}\,\sigma_x,
+        $
+        and write the analogous formula for $U_z(\alpha)$.\vv
+  \item  Verify the rotation‑axis identity
+        $
+          U_x(\pi/2)^{-1}\,U_y(\alpha)\,U_x(\pi/2)=U_z(\alpha).
+        $
+\end{enumerate}
+
+% --------------------------------------------------------------------- %
+\newpage
+\begin{center}
+  {\large\slshape End of mock Exam 2}\bigskip
+
+  \emph{Solutions will be posted after the in‑class test.}
+\end{center}
+
+\end{document}
