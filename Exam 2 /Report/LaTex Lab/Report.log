@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.3.6)  20 APR 2025 03:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.3.6)  20 APR 2025 19:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -136,7 +136,8 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@inbox=\box55
 \enit@count@id=\count284
 \enitdp@description=\count285
-) (Report.aux)
+)
+No file Report.aux.
 \openout1 = `Report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
@@ -153,7 +154,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -193,20 +193,20 @@ LaTeX Font Info:    ... okay on input line 19.
 [1
 
 {/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
  (/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
  (/Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (27.5816pt too wide) in paragraph at lines 62--63
+Overfull \hbox (27.5816pt too wide) in paragraph at lines 72--73
 []\OT1/cmr/bx/n/12 Adding the operator $[] []$ to the hydrogen Hamiltonian removes \OT1/cmr/bx/it/12 all \OT1/cmr/bx/n/12 degeneracy
  []
 
 
-Overfull \hbox (9.54033pt too wide) in paragraph at lines 82--85
+Overfull \hbox (9.54033pt too wide) in paragraph at lines 92--95
 []\OT1/cmr/m/it/12 Concept cue: \OT1/cmr/m/n/12 Zero uncertainties in two observables are possible \OT1/cmr/m/it/12 only \OT1/cmr/m/n/12 when the observables
  []
 
@@ -215,18 +215,282 @@ Overfull \hbox (9.54033pt too wide) in paragraph at lines 82--85
 [2]
 
 [3]
+Overfull \hbox (49.6622pt too wide) in paragraph at lines 193--199
+[]\OT1/cmr/m/n/12 The first line already fails unless $\OML/cmm/m/it/12 ^^L \OT1/cmr/m/n/12 = 0$. \OT1/cmr/m/it/12 Therefore, for any non[]zero real $\OML/cmm/m/it/12 ^^L$ $[]$
+ []
+
+
+Overfull \hbox (73.21956pt too wide) in paragraph at lines 204--205
+[]\OT1/cmr/bx/n/12 Expectation value $\OMS/cmsy/m/n/12 h[]i$ \OT1/cmr/bx/n/12 in the harmonic[]oscillator ground state $\OML/cmm/m/it/12  []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = (\OML/cmm/m/it/12 ^^K=^^Y\OT1/cmr/m/n/12 )[] [][][]$\OT1/cmr/bx/n/12 ,
+ []
+
+
 
 [4]
+Overfull \hbox (6.69832pt too wide) in paragraph at lines 243--245
+[]\OT1/cmr/m/n/12 Hermiticity demands equality of the full operators, not just of their matrix elements. 
+ []
+
+
 
 [5]
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:297: LaTeX Error: Environment psmallmatrix undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 \begin{psmallmatrix}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:298: Misplaced alignment tab character &.
+l.298 2 &
+          1+i\\ 1-i & 3
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:298: Misplaced alignment tab character &.
+l.298 2 & 1+i\\ 1-i &
+                      3
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:299: LaTeX Error: \begin{enumerate} on input line 280 ended by \end{psmallmatrix}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.299 \end{psmallmatrix}
+                        ,
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:305: LaTeX Error: Environment psmallmatrix undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.305     \begin{psmallmatrix}
+                               2&1+i\\1-i&3\end{psmallmatrix}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:305: Misplaced alignment tab character &.
+l.305     \begin{psmallmatrix} 2&
+                                 1+i\\1-i&3\end{psmallmatrix}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:305: Misplaced alignment tab character &.
+l.305     \begin{psmallmatrix} 2&1+i\\1-i&
+                                          3\end{psmallmatrix}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:305: LaTeX Error: \begin{equation*} on input line 301 ended by \end{psmallmatrix}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.305 ...allmatrix} 2&1+i\\1-i&3\end{psmallmatrix}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:306: LaTeX Error: Environment psmallmatrix undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.306     \begin{psmallmatrix}
+                              0\\1\end{psmallmatrix}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:306: LaTeX Error: \begin{equation*} on input line 301 ended by \end{psmallmatrix}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.306 ...begin{psmallmatrix}0\\1\end{psmallmatrix}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:319: LaTeX Error: Environment psmallmatrix undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.319   \begin{psmallmatrix}
+                            6&5(1+i)\\5(1-i)&11\end{psmallmatrix}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:319: Misplaced alignment tab character &.
+l.319   \begin{psmallmatrix}6&
+                              5(1+i)\\5(1-i)&11\end{psmallmatrix}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:319: Misplaced alignment tab character &.
+l.319   \begin{psmallmatrix}6&5(1+i)\\5(1-i)&
+                                             11\end{psmallmatrix}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:319: LaTeX Error: \begin{equation*} on input line 312 ended by \end{psmallmatrix}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.319 ...rix}6&5(1+i)\\5(1-i)&11\end{psmallmatrix}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:320: LaTeX Error: Environment psmallmatrix undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.320   \begin{psmallmatrix}
+                            0\\1\end{psmallmatrix}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:320: LaTeX Error: \begin{equation*} on input line 312 ended by \end{psmallmatrix}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.320   \begin{psmallmatrix}0\\1\end{psmallmatrix}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:358: LaTeX Error: Environment psmallmatrix undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.358 \begin{psmallmatrix}
+                          v_{1}\\v_{2}\end{psmallmatrix}=0
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:358: LaTeX Error: \begin{enumerate} on input line 280 ended by \end{psmallmatrix}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.358 ...mallmatrix}v_{1}\\v_{2}\end{psmallmatrix}
+                                                  =0
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:369: LaTeX Error: Environment psmallmatrix undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369   \begin{psmallmatrix}
+                            -(1+i)\\1\end{psmallmatrix}.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:369: LaTeX Error: \begin{enumerate} on input line 280 ended by \end{psmallmatrix}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369 ...{psmallmatrix}-(1+i)\\1\end{psmallmatrix}
+                                                  .
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
 
 [6]
 
 [7]
 
 [8]
-/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:203: Undefined control sequence.
-l.203  \hat H = \hat p^{2}/2m + V(x)\,\openone
+
+[9]
+
+[10]
+
+[11]
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:559: Undefined control sequence.
+l.559  \hat H = \hat p^{2}/2m + V(x)\,\openone
                                               _2 + \beta\,\hat S_x
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -236,9 +500,9 @@ and I'll forget about whatever was undefined.
 
 
 
-[9]
-/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:233: Undefined control sequence.
-l.233           =\cos\!\frac{\alpha}{2}\,\openone
+[12]
+/Users/enriquerivera/Documents/School/Y4S2/Quantum/Exam 2 /Report/LaTex Lab/Report.tex:589: Undefined control sequence.
+l.589           =\cos\!\frac{\alpha}{2}\,\openone
                                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -248,26 +512,26 @@ and I'll forget about whatever was undefined.
 
 
 
-[10]
+[13]
 
-[11] (Report.aux)
+[14] (Report.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-30>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3245 strings out of 475833
- 48720 string characters out of 5775518
- 443380 words of memory out of 5000000
- 25865 multiletter control sequences out of 15000+600000
- 570671 words of font info for 82 fonts, out of 8000000 for 9000
+ 3255 strings out of 475833
+ 48911 string characters out of 5775518
+ 449389 words of memory out of 5000000
+ 25876 multiletter control sequences out of 15000+600000
+ 571008 words of font info for 83 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  79i,12n,93p,423b,281s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmib10.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsl12.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Report.pdf (11 pages, 191316 bytes).
+ </Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmib10.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsl12.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></Users/enriquerivera/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Report.pdf (14 pages, 223522 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
+ 133 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

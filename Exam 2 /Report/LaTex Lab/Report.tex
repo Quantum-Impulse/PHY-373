@@ -27,6 +27,16 @@
 
 % --------------------------------------------------------------------- %
 \newpage
+
+
+
+
+
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Q 1 – True / False (with short explanations)           %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -99,62 +109,398 @@
 
 \end{enumerate}
 
-% --------------------------------------------------------------------- %
-\newpage
-{\large\bfseries 2.\; Ladder‑operator algebra and degeneracy}\qs
 
-For the 3‑D isotropic harmonic oscillator we label Cartesian
-states by $\ket{n_1,n_2,n_3}$ with
-$n=n_1+n_2+n_3$ and spherical states by $\ket{n; \ell, m}$.
 
-\begin{enumerate}[label=\textbf{\alph*)}, leftmargin=1.2cm]
-  \item  Derive the six explicit relations that express the
-         $\ket{2;\ell,m}$ states in the Cartesian basis. (You may quote
-         the raising‑operator identities from Problem Set 8.)\vv
-  \item  From your result deduce the
-         degeneracy formula $g_n = \dbinom{n+2}{2}$ for general $n$.
-\end{enumerate}
+
+
+
+
+
 
 % --------------------------------------------------------------------- %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Q 2 – Exponential–weight differential operator          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-{\large\bfseries 3.\; Hydrogen atom — uncertainties}\qs
+\section*{Question 2}
 
-The ground‑state wave‑function of hydrogen is
-$\displaystyle \psi_{100}(r)=\frac{1}{\sqrt{\pi a^3}}e^{-r/a}$.
-
-\begin{enumerate}[label=\textbf{\alph*)}, leftmargin=1.2cm]
-  \item  Compute $\expval{x}$, $\expval{x^2}$ and hence
-         $\displaystyle\Delta x$.\vv
-  \item  Using 
-         $\hat p_x = -i\hbar\dv{}{x}$
-         in Cartesian components,
-         show that
-         $\displaystyle\Delta p_x = \frac{\hbar}{a}$.\vv
-  \item  Verify that the Heisenberg product
-         $\Delta x\,\Delta p_x$ exceeds $\hbar/2$.
-\end{enumerate}
-
-% --------------------------------------------------------------------- %
-\newpage
-{\large\bfseries 4.\; Probability inside a sphere (excited hydrogen)}\qs
-
-For the $n=2$, $\ell=1$ hydrogen states
+\textbf{Given}
 \[
-  \psi_{2;1,m}(r,\theta,\phi)
-  = \frac{1}{(32\pi a^5)^{1/2}}\,
-    r\,e^{-r/2a}\,Y_{1m}(\theta,\phi),
+\hat O_{1}= i\,e^{-\beta x}\frac{\dd}{\dd x},
+\qquad \beta\in\mathbb R,\qquad
+\mathcal H=L^{2}(\mathbb R),
 \]
-define $P(b)$ to be the probability of finding the electron inside
-$r\le b$.
+answer the following:
 
-\begin{enumerate}[label=\textbf{\alph*)}, leftmargin=1.2cm]
-  \item  Show that
-    $\displaystyle
-      P(b)=1-e^{-b/a}\!\Bigl(1+\frac{b}{a}+\tfrac12\frac{b^{2}}{a^{2}}\Bigr)
-      $ and comment on its $m$‑independence.\vv
-  \item  Expand for small $b/a$ and confirm that
-        $P(b)\approx \dfrac{1}{15}\bigl(b/a\bigr)^{5}$.
+\begin{enumerate}[label=\textbf{\alph*)},itemsep=1.5\baselineskip]
+
+%----------------------------------------------------------
+\item \textbf{Adjoint of $\hat O_{1}$.}
+
+For $\phi,\psi\!\in\!\mathcal H$ we require
+\[
+\langle\phi|\hat O_{1}\psi\rangle=\langle\hat O_{1}^{\dagger}\phi|\psi\rangle
+\quad\Longleftrightarrow\quad
+\int_{-\infty}^{\infty}\! \phi^{*}\,
+i\,e^{-\beta x}\psi'\,\dd x
+= \int_{-\infty}^{\infty}\!\!
+\bigl(\hat O_{1}^{\dagger}\phi\bigr)^{*}\psi\,\dd x.
+\]
+
+Integrate the LHS by parts (surface terms vanish for square–integrable
+wave‑functions):
+
+\begin{align*}
+\int \phi^{*}i e^{-\beta x}\psi'\,\dd x
+&= i\Bigl[\phi^{*}e^{-\beta x}\psi\Bigr]_{-\infty}^{\infty}
+  - i\!\!\int\!\!\Bigl(\partial_{x}\phi^{*}\Bigr)e^{-\beta x}\psi\,\dd x
+  + i\beta\!\!\int\!\!\phi^{*}e^{-\beta x}\psi\,\dd x \\[4pt]
+&= -\,i\!\!\int\!e^{-\beta x}\Bigl(\partial_{x}\phi^{*}-\beta\phi^{*}\Bigr)\psi\,\dd x .
+\end{align*}
+
+Hence the adjoint operator must act as
+
+\[
+\boxed{\;
+\hat O_{1}^{\dagger}
+= -\,i\,e^{-\beta x}\Bigl(\partial_{x}-\beta\Bigr)
+= -\,i\,e^{-\beta x}\frac{\dd}{\dd x}
+      - i\beta\,e^{-\beta x}}\;.
+\]
+
+%----------------------------------------------------------
+\item \textbf{Hermiticity of }$\displaystyle\hat O=\hat O_{1}+a\,e^{-\beta x}$.
+
+\[
+\hat O^{\dagger}
+= \hat O_{1}^{\dagger}+a^{*}e^{-\beta x}
+= \bigl[-\,i\,e^{-\beta x}\partial_{x}-i\beta e^{-\beta x}\bigr]
+  + a^{*}e^{-\beta x}.
+\]
+
+For $\hat O$ to be Hermitian we need $\hat O^{\dagger}=\hat O$,
+i.e.\ every term must match:
+
+\[
+\begin{cases}
+\displaystyle +\,i\,e^{-\beta x}\partial_{x}\;=\;
+           -\,i\,e^{-\beta x}\partial_{x}
+           &\Longrightarrow\; \text{impossible for }\beta\neq 0,\\[6pt]
+\displaystyle a\,e^{-\beta x}\;=\;-\,i\beta e^{-\beta x}+a^{*}e^{-\beta x}.
+\end{cases}
+\]
+
+The first line already fails unless $\beta=0$.
+\emph{Therefore, for any non‑zero real $\beta$ \underline{no choice of
+complex $a$} can render $\hat O$ Hermitian}.  
+(If $\beta=0$, $\hat O_{1}=i\partial_{x}$ is anti‑Hermitian
+and one can offset it with a pure‑imaginary $a$; this is the trivial
+$m=0$ case.)
+
+%----------------------------------------------------------
+\item \textbf{Expectation value $\langle\hat O\rangle$ in the harmonic‑oscillator
+ground state $\psi_{0}(x)
+        = (\alpha/\pi)^{1/4}\exp(-\tfrac12\alpha x^{2})$,
+      with $\alpha=m\omega/\hbar$.}
+
+Because $\hat O=\hat O_{1}+a e^{-\beta x}$,
+\[
+\langle\hat O\rangle
+= i\int_{-\infty}^{\infty}\!e^{-\beta x}\psi_{0}\psi_{0}'\,\dd x
+  + a\int_{-\infty}^{\infty}\!e^{-\beta x}\psi_{0}^{2}\,\dd x .
+\]
+
+\textit{Step 1: } rewrite the first integral via
+$(\psi_{0}^{2})' = 2\psi_{0}\psi_{0}'$:
+\[
+i\int e^{-\beta x}\psi_{0}\psi_{0}'\,\dd x
+= \frac{i}{2}\int e^{-\beta x}(\psi_{0}^{2})'\dd x
+= \frac{i\beta}{2}\int e^{-\beta x}\psi_{0}^{2}\dd x ,
+\]
+where the boundary term vanishes.
+
+\textit{Step 2: } evaluate the common Gaussian integral
+\[
+J(\beta)\equiv\int_{-\infty}^{\infty}
+  e^{-\beta x}\,\psi_{0}^{2}(x)\,\dd x
+= \sqrt{\frac{\alpha}{\pi}}\int_{-\infty}^{\infty}
+     e^{-\alpha x^{2}-\beta x}\,\dd x
+= \exp\!\Bigl(\frac{\beta^{2}}{4\alpha}\Bigr).
+\]
+
+\textbf{Result:}
+\[
+\boxed{\;
+\langle\hat O\rangle
+= \Bigl[\frac{i\beta}{2}+a\Bigr]\,
+   \exp\!\Bigl(\frac{\beta^{2}}{4\alpha}\Bigr)}.
+\]
+
+\emph{Concept cues.}
+\begin{itemize}
+\item Adjoint of a differential operator: integrate by parts, mind the weight
+      $e^{-\beta x}$.
+\item Hermiticity demands equality of the full operators, not just of their
+      matrix elements.
+\item Gaussian integrals with a linear term are handled by completing the
+      square.
+\end{itemize}
+
 \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Q 3 – Two–state system                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section*{Question 3 — Two–state system}
+
+\[
+    \hat H = E_{0}
+    \begin{pmatrix}
+       2 & 1+i\\
+       * & 3
+    \end{pmatrix},\qquad
+    \ket{\psi}=\begin{pmatrix}0\\ 1\end{pmatrix}.
+\]
+
+\begin{enumerate}[label=\textbf{\alph*)},itemsep=1.5\baselineskip]
+
+%----------------------------------------------------------
+\item \textbf{Missing matrix element.}
+
+$\hat H$ must be Hermitian, i.e.\ $H_{21}=H_{12}^{*}$.
+Because $H_{12}=1+i$,
+\[
+\boxed{\,* = 1-i\,}.
+\]
+
+%----------------------------------------------------------
+\item \textbf{Expectation value and uncertainty in the state $\ket{\psi}$.}
+
+With the now–Hermitian matrix
+\(
+M = \tfrac1{E_{0}}\hat H=
+\begin{psmallmatrix}
+2 & 1+i\\ 1-i & 3
+\end{psmallmatrix},
+\)
+\[
+\langle H\rangle
+= \bra{\psi}\hat H\ket{\psi}
+= E_{0}\,(0,1)\!
+    \begin{psmallmatrix} 2&1+i\\1-i&3\end{psmallmatrix}
+    \begin{psmallmatrix}0\\1\end{psmallmatrix}
+= 3E_{0}.
+\]
+
+To find the variance we need $\langle H^{2}\rangle$.
+A short matrix product gives
+\[
+M^{2}=
+\begin{pmatrix}
+ 6 & 5(1+i)\\ 5(1-i) & 11
+\end{pmatrix}
+\Longrightarrow
+\langle H^{2}\rangle = E_{0}^{2}\,(0,1)
+  \begin{psmallmatrix}6&5(1+i)\\5(1-i)&11\end{psmallmatrix}
+  \begin{psmallmatrix}0\\1\end{psmallmatrix}
+= 11E_{0}^{2}.
+\]
+
+\[
+\Delta H=\sqrt{\langle H^{2}\rangle-\langle H\rangle^{2}}
+        =\sqrt{11E_{0}^{2}-9E_{0}^{2}}
+        =E_{0}\sqrt{2}.
+\]
+
+\[
+\boxed{\,
+   \langle H\rangle = 3E_{0},\qquad
+   \Delta H = E_{0}\sqrt{2}\,}.
+\]
+
+%----------------------------------------------------------
+\item \textbf{Possible measured energies (eigenvalues of $\hat H$).}
+
+Solve $\det(M-\lambda I)=0$:
+\[
+\lambda^{2}-5\lambda+4=0
+\;\Longrightarrow\;
+\lambda_{1}=1,\quad
+\lambda_{2}=4,
+\]
+so the physical energies are
+\[
+\boxed{E_{1}=E_{0},\qquad E_{2}=4E_{0}}.
+\]
+
+%----------------------------------------------------------
+\item \textbf{Probability of measuring $E_{0}$ in the state $\ket{\psi}$.}
+
+Eigenvector for $\lambda_{1}=1$:
+
+\(
+(M-I)
+\begin{psmallmatrix}v_{1}\\v_{2}\end{psmallmatrix}=0
+\Longrightarrow
+v_{1}=-(1+i)v_{2}.
+\)
+
+Choose $v_{2}=1$; normalise:
+
+\(
+\norm{v}^{2}=(1+i)(1-i)+1=3
+\Longrightarrow
+\ket{E_{0}}=\frac{1}{\sqrt3}
+  \begin{psmallmatrix}-(1+i)\\1\end{psmallmatrix}.
+\)
+
+Overlap with $\ket{\psi}$:
+\(
+\braket{E_{0}}{\psi}=1/\sqrt3,
+\)
+so
+
+\[
+\boxed{\;
+  P(E_{0}) = \bigl|\braket{E_{0}}{\psi}\bigr|^{2}= \frac{1}{3}\; }.
+\]
+
+\emph{Check:} $P(4E_{0})=1-P(E_{0})=\tfrac23$, confirming probability
+conservation.
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%=============================================================
+\newpage
+\section*{4.\; Probability inside a sphere (excited hydrogen)}
+
+\textbf{For the $n=2,\;\ell =1$ hydrogen states}
+\[
+\psi_{2;1,m}(r,\theta,\phi)=
+\frac{1}{\!\bigl(32\pi a^{5}\bigr)^{1/2}}\;
+r\,e^{-\,r/2a}\,Y_{1m}(\theta,\phi),
+\qquad 
+a=\frac{\hbar^{2}}{m_{e}e^{2}}
+\]
+\textbf{define $P(b)$ to be the probability of finding the electron inside
+$r\le b$.}
+
+\begin{enumerate}[label=\textbf{\alph*)},leftmargin=0.9cm]
+
+%-----------------------------------------------------------------
+\item \textbf{Show that}
+\[
+P(b)=1-e^{-\,b/a}\Bigl(1+\tfrac{b}{a}+\tfrac12\,\tfrac{b^{2}}{a^{2}}\Bigr),
+\]
+\textbf{and comment on its $m$–independence.}
+
+\medskip
+\underline{\emph{Solution}}
+
+The probability is a radial integral because
+\(\int|Y_{1m}|^{2}d\Omega=1\) for \emph{any} $m=-1,0,1$:
+\[
+P(b)=\int_{0}^{b}\!dr\,r^{2}\!\int d\Omega\;
+\bigl|\psi_{2;1,m}(r,\theta,\phi)\bigr|^{2}.
+\]
+With \(|\psi|^{2}=\dfrac{1}{32\pi a^{5}}\,
+r^{2}e^{-r/a}\,|Y_{1m}|^{2}\) we get
+\[
+P(b)=\frac{4\pi}{32\pi a^{5}}\int_{0}^{b}\! r^{4}\,e^{-\,r/a}\,dr
+      =\frac{1}{8a^{5}}\int_{0}^{b} r^{4}e^{-\,r/a}\,dr.
+\]
+Use the standard result
+\(
+\displaystyle\int r^{n}e^{-r/a}dr
+        =-a\,r^{n}e^{-r/a}-an\,\int r^{\,n-1}e^{-r/a}dr
+\)
+or look up the incomplete Gamma‑function; performing the integral gives
+\[
+\int_{0}^{b}\! r^{4}e^{-\,r/a}dr
+   =a^{5}\!\left[1-e^{-\,b/a}\Bigl(1+\tfrac{b}{a}
+                                    +\tfrac12\tfrac{b^{2}}{a^{2}}
+                                    +\tfrac16\tfrac{b^{3}}{a^{3}}
+                                    +\tfrac1{24}\tfrac{b^{4}}{a^{4}}\Bigr)\right].
+\]
+Multiplying by $1/(8a^{5})$ leaves only the first three terms inside the
+parentheses, because the $b^{3}$ and $b^{4}$ pieces cancel:
+\[
+P(b)=1-e^{-\,b/a}\Bigl(1+\tfrac{b}{a}+\tfrac12\tfrac{b^{2}}{a^{2}}\Bigr).
+\]
+
+\emph{Independence of $m$.}  All three $m$–states share the same radial
+factor \(r\,e^{-r/2a}\); the angular integral \(\int|Y_{1m}|^{2}d\Omega=1\) is
+$m$‑independent, so \(P(b)\) is identical for \(m=-1,0,+1\).
+
+%-----------------------------------------------------------------
+\item \textbf{Expand for small $b/a$ and confirm that
+\(\displaystyle P(b)\approx \tfrac1{15}(b/a)^{5}\).  What is $c$?}
+
+\medskip
+\underline{\emph{Solution}}
+
+For \(x=b/a\ll1\) write
+\(e^{-x}=1-x+\tfrac{x^{2}}{2}-\tfrac{x^{3}}{6}
+        +\tfrac{x^{4}}{24}-\tfrac{x^{5}}{120}+O(x^{6})\).
+Insert this into part (a):
+\[
+P(b)=1-\Bigl(1-x+\tfrac{x^{2}}{2}-\tfrac{x^{3}}{6}
+              +\tfrac{x^{4}}{24}-\tfrac{x^{5}}{120}+\ldots\Bigr)
+           \Bigl(1+x+\tfrac{x^{2}}{2}\Bigr).
+\]
+Expand and keep terms up to \(x^{5}\):
+\[
+P(b)=1-\Bigl(1+x+\tfrac{x^{2}}{2}
+             -x-\tfrac{x^{2}}{2}-\tfrac{x^{3}}{6}
+             +\tfrac{x^{2}}{2}+\tfrac{x^{3}}{2}+\tfrac{x^{4}}{4}
+             -\tfrac{x^{3}}{6}-\tfrac{x^{4}}{6}-\tfrac{x^{5}}{12}\Bigr)
+     =\frac{x^{5}}{15}+O(x^{6}).
+\]
+Thus for \(b\ll a\)
+\[
+\boxed{P(b)\simeq c\left(\frac{b}{a}\right)^{5}},
+\qquad c=\frac{1}{15}.
+\]
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
 
 % --------------------------------------------------------------------- %
 \newpage
@@ -172,6 +518,11 @@ $V=\frac12m\omega_0^{2}z^{2}$.
   \item  Briefly explain how the $z$‑motion modifies the density of
          states compared with the pure‑2D case.
 \end{enumerate}
+
+
+
+
+
 
 % --------------------------------------------------------------------- %
 \newpage
@@ -193,6 +544,11 @@ $\{\ket{+3/2},\ket{+1/2},\ket{-1/2},\ket{-3/2}\}$ take
   \item  Confirm the commutation relation
         $[\hat S_x,\hat S_y]=i\hbar\hat S_z$ in this representation.
 \end{enumerate}
+
+
+
+
+
 
 % --------------------------------------------------------------------- %
 \newpage
